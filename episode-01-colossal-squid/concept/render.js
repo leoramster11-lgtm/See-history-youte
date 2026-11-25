@@ -11,5 +11,9 @@ const path = require('path');
     await page.locator('canvas').screenshot({ path: path.join(__dirname, `frame-0${s}.png`) });
     console.log('rendered scene', s);
   }
+  await page.goto('file://' + path.join(__dirname, 'frames.html') + '?scene=1&lang=en');
+  await page.waitForFunction(() => window.__done === true, null, { timeout: 60000 });
+  await page.locator('canvas').screenshot({ path: path.join(__dirname, 'thumbnail-en.png') });
+  console.log('rendered thumbnail-en');
   await browser.close();
 })();

@@ -7,7 +7,7 @@
 const W = 1920, H = 1080;
 const cv = document.getElementById('c');
 const ctx = cv.getContext('2d');
-const scene = +(new URLSearchParams(location.search).get('scene') || 1);
+const qs = new URLSearchParams(location.search); const scene = +(qs.get('scene') || 1); window.EN = qs.get('lang') === 'en';
 
 // ---------- helpers ----------
 let seed = 1337 + scene * 101;
@@ -153,7 +153,7 @@ function letterbox(c, h = 70) { c.fillStyle = '#000'; c.fillRect(0, 0, W, h); c.
 function hud(c, depth, temp, atm, x = 110, y = 140) {
   c.save();
   c.font = '500 22px "JetBrains Mono"'; c.fillStyle = 'rgba(150,220,235,.75)'; c.letterSpacing = '4px';
-  c.fillText('ГЛУБИНА', x, y);
+  c.fillText(window.EN ? 'DEPTH' : 'ГЛУБИНА', x, y);
   c.font = '700 64px "JetBrains Mono"'; c.fillStyle = 'rgba(225,250,255,.95)';
   c.shadowColor = 'rgba(120,220,255,.6)'; c.shadowBlur = 18;
   c.fillText(depth, x, y + 66);
@@ -319,8 +319,8 @@ function scene1() {
   glow(ctx, 120, 1000, 220, '200,235,255', 0.9);
   // HUD + titles
   vignette(ctx, 0.9);
-  hud(ctx, '2 000 М', '+1,2 °C', '201 АТМ');
-  title(ctx, 'ОН ВИДИТ', 'ТЕБЯ ПЕРВЫМ', 110, 780, 112);
+  if (window.EN) { hud(ctx, '2,000 M', '+1.2 °C', '201 ATM'); title(ctx, 'IT SEES', 'YOU FIRST', 110, 780, 128); }
+  else { hud(ctx, '2 000 М', '+1,2 °C', '201 АТМ'); title(ctx, 'ОН ВИДИТ', 'ТЕБЯ ПЕРВЫМ', 110, 780, 112); }
   letterbox(ctx, 54);
   grain(16);
 }
