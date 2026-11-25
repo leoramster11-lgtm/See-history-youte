@@ -1,323 +1,255 @@
-# Episode 1 — The Colossal Squid
-### "What would happen to you if you met a Colossal Squid at 2,000 meters?"
+# Episode 1 — The Colossal Squid (v2, beat-by-beat)
 
-**Runtime:** ~13:45 · **Voice-over:** ~1,850 words (~135 wpm, low, calm, deliberate) · **Format:** 16:9, 1080p/4K
+Runtime **15:47** · 210 beats · avg 4.5 s per beat.
+Generated from `film/timeline.js` — the same file drives the animation and the sound.
 
----
 
-## Packaging
+## COLD OPEN
 
-**Title options (A/B test):**
-1. What If You Met a COLOSSAL SQUID at 2,000 Meters?
-2. The Monster Nobody Saw Alive for 100 Years
-3. Its Eye Is Bigger Than Your Head. And It Sees You First.
+| Time | Shot | Text on screen | Sound | Voice-over |
+|---|---|---|---|---|
+| 0:00 | void lamp:0 snow:0.3 |  | drone_low, breath | *(silence)* |
+| 0:03 | void lamp:0 snow:0.6 hudIn:1 |  | blip | There is no sun down here. |
+| 0:06 | void lamp:0 snow:0.8 |  | tick, tick | There never was. |
+| 0:09 | void lamp:0 frost:1 push:1 |  | ice | Two hundred atmospheres of pressure. Water colder than the inside of your fridge. |
+| 0:15 | void lamp:0 fog:1 |  | squeak | And a darkness so thick it feels solid. |
+| 0:19 | void lamp:1 lampOn:1 beam:[0.1,0.1] |  | clunk, hum_on | You switch on the lamp. |
+| 0:22 | void lamp:1 beam:[0.1,-0.45] |  | servo | Nothing. |
+| 0:24 | void lamp:1 beam:[-0.45,0.45] |  | servo | You're alone. |
+| 0:27 | void lamp:1 beam:[0.45,0.42] |  | heartbeat | *(silence)* |
+| 0:29 | void lamp:1 beam:[0.42,0.4] glint:1 |  | subhit | You're not. |
+| 0:31 | eye zoom:[0.35,0.8] pupil:[1,1] dark:1 |  | rewind, drone_swell | Something has been watching you since the second you arrived. |
+| 0:36 | eye zoom:[0.8,1] pupil:[1,0.72] |  | creak | With an eye bigger than a basketball. |
+| 0:39 | eye zoom:[1,1.05] pupil:[0.72,0.7] | LARGEST EYE / ON EARTH | impact | The biggest eye of any animal alive. |
+| 0:43 | black  |  |  | *(silence)* |
+| 0:44 | title l1:"THE COLOSSAL SQUID" l2:"What would happen to you?" |  | boom, typewriter | Today, we go down to meet the colossal squid. And we'll find out exactly what would happen to you if you met one. |
+| 0:54 | flash kind:"hooks" |  | whoosh, ratchet | Hooks that rotate. |
+| 0:56 | flash kind:"beak" |  | whoosh, crack | A beak that cuts like shears. |
+| 0:59 | flash kind:"hearts" |  | thump, thump, thump | Three hearts. Blue blood. |
+| 1:02 | flash kind:"whale" |  | clicks | And the one creature on Earth it is truly afraid of. |
+| 1:07 | card lines:["NOBODY HAS EVER FILMED","AN ADULT ONE ALIVE."] tone:"red" | NOBODY HAS EVER FILMED / AN ADULT ONE ALIVE. | impact | Nobody has ever filmed an adult one alive in the deep. |
+| 1:12 | surface v:"storm" |  | wind, waves | So let's go see one. |
 
-**Thumbnail:** giant eye in the lamp beam, tiny reflection of your submersible in the pupil, text **"IT SEES YOU FIRST"**, red tag **2,000 M**. (Rendered — `concept/thumbnail-en.png`.)
+## THE DESCENT
 
----
+| Time | Shot | Text on screen | Sound | Voice-over |
+|---|---|---|---|---|
+| 1:15 | surface v:"ship" |  | wind, waves | The Southern Ocean. The sea that circles Antarctica. |
+| 1:19 | surface v:"wave" |  | wavecrash | The coldest, angriest water on the planet. |
+| 1:23 | surface v:"wave" building:1 | WAVES UP TO 20 M / = A 6-STORY BUILDING | impact, wavecrash | Waves here can reach twenty meters. That is a six-story building made of water. |
+| 1:29 | surface v:"crane" |  | hydraulic, chains | This is your ride. |
+| 1:32 | diagram k:"sphere" |  | blueprint | A steel sphere about two meters wide. Roughly the size of the inside of a small car. |
+| 1:40 | void lamp:0 hatch:1 inside:1 |  | hatch, bolts | One window. One cable to the surface. |
+| 1:43 | void lamp:0 bolts:1 inside:1 |  | bolts, bolts | And no way out until they pull you back up. |
+| 1:48 | surface v:"splash" |  | splash, underwater | Descent begins. |
+| 1:51 | descent d:[0,30] |  | bubbles | *(silence)* |
+| 1:53 | descent d:[30,40] redfade:1 |  |  | At thirty meters, the color red is the first thing to die. |
+| 1:59 | descent d:[40,45] blood:1 |  | tss | Cut your finger here, and your blood looks green. |
+| 2:03 | descent d:[45,100] | RED LIGHT: / GONE | impact | The water has simply eaten the red part of the light. |
+| 2:09 | descent d:[100,200] jelly:1 |  | chime | At two hundred meters, you enter the twilight zone. |
+| 2:13 | descent d:[200,300] sparks:1 |  | twinkle | Here, animals start making their own light. |
+| 2:16 | descent d:[300,400] fish:1 sparks:1 |  | swish | Up to three out of four creatures in the deep can glow. |
+| 2:22 | descent d:[400,500] siph:1 sparks:1 |  | shimmer | To lure prey. To scare predators. To find each other in the dark. |
+| 2:28 | void lamp:0 cond:1 inside:1 |  | drip | Five hundred meters. Two degrees. Water beads on the walls. |
+| 2:33 | void lamp:0 breathfog:1 inside:1 |  | exhale | Now you can see your own breath. |
+| 2:36 | descent d:[800,1000] fadeout:1 |  |  | *(silence)* |
+| 2:39 | black hudOnly:1 label:"MIDNIGHT ZONE" |  | tick | One thousand meters. The last bit of sunlight is gone. |
+| 2:44 | black hudOnly:1 |  | ticks_fast | From here all the way to the seafloor, it is night. Forever. |
+| 2:49 | diagram k:"palm" items:"cars" n:7 label:"~10 TONS ON YOUR PALM" |  | thud, thud, thud, thud, thud, thud, thud | The pressure on the palm of your hand right now? About ten tons. Seven cars, stacked on your hand. |
+| 2:58 | diagram k:"lungs" |  | squeeze, pop | Without the sphere, the air in your lungs would be crushed down to the size of a golf ball. |
+| 3:06 | card lines:["SURVIVAL WITHOUT","THE SPHERE: 0 SECONDS"] tone:"red" | SURVIVAL WITHOUT / THE SPHERE: 0 SECONDS | impact | You wouldn't last a second. |
+| 3:09 | descent d:[1050,1400] dark:1 |  | pulse | *(silence)* |
+| 3:12 | void lamp:1 beam:[0,0.05] shake:1 inside:1 |  | groan | The hull groans. |
+| 3:15 | void lamp:1 beam:[0.05,0.1] inside:1 |  | heartbeat | That's normal, you tell yourself. That's just the steel settling under the pressure. |
+| 3:21 | void lamp:1 beam:[0.1,0.1] droplet:1 inside:1 |  | drip_big | *(silence)* |
+| 3:23 | void lamp:1 beam:[0.1,0.1] inside:1 |  | exhale | It's fine. |
+| 3:26 | void lamp:1 beam:[0.1,0.12] passby:1 |  | whoosh_big, subhit | What was that? |
+| 3:28 | void lamp:1 beam:[0.12,-0.5] |  | servo | *(silence)* |
+| 3:31 | void lamp:1 beam:[-0.5,0] thrustersOff:1 |  | winddown | Two thousand meters. |
+| 3:34 | diagram k:"palm" items:"elephants" n:3 label:"~20 TONS ON YOUR PALM" |  | elephant_thud, elephant_thud, elephant_thud | Now the pressure on your palm is twenty tons. Three full-grown African elephants, standing on your hand. |
+| 3:41 | void lamp:1 beam:[0,0] wide:1 |  | drone_swell | And the only thing between you and that pressure is a few centimeters of steel. |
+| 3:48 | map  |  | ping | Somewhere out here, in the dark, it is waiting. |
+| 3:52 | void lamp:1 beam:[0,0] burn:1 |  | projector | But first, you need to know what you are dealing with. Because for a hundred years, nobody did. |
 
-## Retention rules for this edit
+## A MONSTER WITH NO FACE
 
-1. **The 3-second rule.** Nothing stays static for more than ~3 seconds. Every row below is one "beat" — each beat changes at least one of: **cut · camera move · reveal · number/text pop · sound hit · light change**.
-2. **The HUD never sleeps.** Depth, temperature and pressure counters are always on screen and always moving. Numbers ticking = the brain stays engaged.
-3. **Open loops.** Every scene ends by opening a question the next one answers (*"Why does it need an eye that big?"* → answered 2 minutes later).
-4. **Re-hook every 60–90 s.** A shock line, a stat slam, or a hard sound drop.
-5. **Silence is a weapon.** Rows marked `(silence)` = cut all music, keep only hull creaks and breathing.
-6. **You are the camera.** Every scene is shot from inside or just outside your sphere — the viewer is always *in* the story.
+| Time | Shot | Text on screen | Sound | Voice-over |
+|---|---|---|---|---|
+| 4:00 | archive v:"ship" year:"1925" |  | projector | 1925. |
+| 4:03 | archive v:"whale" |  | saw | Whalers cut open the stomach of a sperm whale. |
+| 4:07 | archive v:"arms" |  | slap | Inside, they find two pieces of arm. |
+| 4:11 | flash kind:"hooks" sepia:1 |  | ring | But they are not covered in suckers. They are covered in hooks. |
+| 4:16 | flash kind:"hooks" rotate:1 sepia:1 |  | ratchet | Sharp. Curved. And they swivel. |
+| 4:19 | archive v:"sketch" |  | pen | A scientist named Guy Robson describes a brand new species from those two scraps alone. |
+| 4:26 | card lines:["NAME: COLOSSAL SQUID","BODY: NEVER SEEN"] tone:"sepia" | NAME: COLOSSAL SQUID / BODY: NEVER SEEN | impact | The colossal squid. But nobody has seen the animal itself. |
+| 4:31 | diagram k:"timeline" |  | whoosh | For decades, all we find are traces. |
+| 4:35 | diagram k:"beaks" |  | clatter | Beaks in the stomachs of sperm whales. Hundreds of them. |
+| 4:39 | archive v:"scars" |  | drone_low | Strange scars on whale skin. Scraps in fishing nets. |
+| 4:44 | card lines:["FEBRUARY 2007","ROSS SEA, ANTARCTICA"] tone:"blue" | FEBRUARY 2007 / ROSS SEA, ANTARCTICA | impact | Then, February 2007. |
+| 4:47 | archive v:"boat" modern:1 |  | wind, engine | A fishing boat is hauling up toothfish from about one and a half kilometers down. |
+| 4:53 | archive v:"line" modern:1 |  | linecreak | The line goes tight. |
+| 4:56 | archive v:"underwater" modern:1 |  | subhit | On the hook, a fish. And wrapped around the fish, something that refuses to let go. |
+| 5:03 | diagram k:"clock" hours:2 |  | ticks_fast | It takes nearly two hours to bring it to the surface. |
+| 5:08 | archive v:"deck" modern:1 |  | splash, slap | When it hits the deck, the crew understands. Nobody has ever seen anything like this. |
+| 5:15 | card lines:["495 KG"] tone:"red" huge:1 | 495 KG | impact_big | Four hundred and ninety-five kilograms. |
+| 5:18 | diagram k:"compare" items:["piano","bear","men7"] labels:["A GRAND PIANO","A BIG MALE POLAR BEAR","7 ADULT MEN"] |  | pop, pop, pop | As heavy as a grand piano. As heavy as a big male polar bear. As heavy as seven grown men. |
+| 5:27 | card lines:["THE HEAVIEST INVERTEBRATE","EVER FOUND"] tone:"white" | THE HEAVIEST INVERTEBRATE / EVER FOUND | impact | The heaviest invertebrate humans have ever held. |
+| 5:31 | archive v:"museum" modern:1 |  | museum | They freeze it whole and ship it to a museum in New Zealand, where it is still on display today. |
+| 5:39 | archive v:"rov" modern:1 year:"2025" |  | sonar | And the first video of a live colossal squid in the wild? That only came in 2025. |
+| 5:47 | archive v:"rovsquid" modern:1 |  | chime | A hundred years after we learned it existed. A baby, thirty centimeters long, clear as glass. |
+| 5:54 | void lamp:1 beam:[0,0] |  | drone_low | An adult, in its own world, at its own depth? Nobody has ever filmed one. |
+| 6:01 | card lines:["UNTIL NOW."] tone:"red" | UNTIL NOW. | impact | Until now. |
 
-**Legend:** 🎬 shot / action · 🔊 sound · 🎙 voice-over · 📟 HUD change · 💥 text slam
+## FIRST CONTACT
 
----
+| Time | Shot | Text on screen | Sound | Voice-over |
+|---|---|---|---|---|
+| 6:03 | void lamp:1 beam:[0,0] thrustersOff:1 |  | winddown | You cut the engines. |
+| 6:06 | void lamp:1 beam:[0,0.05] macro:1 |  | tinnitus | Silence. Just marine snow, drifting through the light. |
+| 6:10 | void lamp:1 beam:[0.05,0.05] flake:1 |  |  | Dead plankton. Crumbs of life from the surface. Some of it has been sinking for weeks. |
+| 6:17 | void lamp:1 beam:[0.05,0.25] redEdge:1 |  | cello | Then, at the very edge of the light, a color. |
+| 6:22 | skin pan:[0,1] |  | slide | Dark red. Almost black. |
+| 6:25 | skin pan:[1,1.4] split:1 |  | whoosh | Down here, red light doesn't exist. So red skin looks black. Perfect camouflage. |
+| 6:31 | skin pan:[1.4,2] |  | heartbeat | Only your lamp gives it away. |
+| 6:34 | skin pan:[2,2.4] |  | heartbeat | And then you see it. |
+| 6:37 | eye zoom:[0.55,0.75] pupil:[1,1] reveal:1 |  | drone_swell | The eye. |
+| 6:40 | eye zoom:[0.75,1.15] pupil:[1,1] reflect:1 |  | glass | You can see yourself in it. |
+| 6:43 | diagram k:"eyesize" |  | pop, pop | Twenty-seven centimeters across, measured on a dead one. Probably even bigger alive. Wider than a dinner plate. Bigger than a basketball. |
+| 6:52 | diagram k:"lens" |  | squelch | The lens inside is the size of an orange. |
+| 6:57 | eye zoom:[0.6,0.6] pupil:[0.9,0.9] photophores:1 |  | hum | And beside the eyes, small glowing organs. Photophores. |
+| 7:01 | eye zoom:[0.6,0.55] pupil:[0.9,0.9] photophores:2 |  | hum | Scientists think it may use them like headlights. |
+| 7:05 | card lines:["WHY SUCH A BIG EYE…","WHERE THERE IS NO LIGHT?"] tone:"white" type:1 | WHY SUCH A BIG EYE… / WHERE THERE IS NO LIGHT? | typewriter | But why would anything need an eye this big, in a place with no light? |
+| 7:11 | diagram k:"glowwhale" p:[0,0.5] |  | clicks, twinkle | Here is what scientists think. When something huge moves through the dark, |
+| 7:17 | diagram k:"glowwhale" p:[0.5,1] |  | shimmer | it disturbs glowing plankton. And the water lights up all around it. |
+| 7:23 | diagram k:"distance" |  | ruler, impact | An eye this size can spot that glow from more than a hundred and twenty meters away. That is longer than a football field. |
+| 7:33 | card lines:["IT'S NOT A HUNTING EYE."] tone:"white" | IT'S NOT A HUNTING EYE. | impact | It's not an eye for hunting. |
+| 7:36 | card lines:["IT'S AN EARLY-WARNING","SYSTEM."] tone:"red" | IT'S AN EARLY-WARNING / SYSTEM. | impact_big | It's an early-warning system. |
+| 7:39 | eye zoom:[0.7,0.75] pupil:[0.85,0.85] look:[0,-0.3] |  | creak | It isn't looking for food. It's looking for the thing it fears. |
+| 7:45 | void lamp:1 beam:[0,0] wide:1 glowSub:1 |  | hum | But you are big. You glow. You hum. |
+| 7:49 | eye zoom:[0.9,1] pupil:[0.85,0.6] |  | creak | And right now, it's deciding what you are. |
+| 7:53 | void lamp:1 beam:[0,0] inside:1 bpm:142 |  | heartbeat_fast | Your pulse: one hundred forty-two. |
+| 7:56 | void lamp:1 beam:[0,0] inside:1 bpm:146 |  | heartbeat_fast, breath_shallow | Your palms are soaked, even though it's five degrees in here. |
+| 8:01 | void lamp:1 beam:[0,0] push:1 |  | breath_hold | You hold your breath. You can't help feeling you're breathing too loud. |
+| 8:06 | eye zoom:[1,1.02] pupil:[0.6,0.6] |  |  | It can't hear you. |
+| 8:09 | card lines:["…can it?"] tone:"white" small:1 | …can it? | lownote | Can it? |
+| 8:11 | squid3d cam:"passby" |  | slide_long, displace | Then it moves. And it just keeps going. And going. |
+| 8:16 | void lamp:1 beam:[0,0] |  |  | Where did it go? |
+| 8:18 | squid3d cam:"turntable" p:[0,0.15] |  | reveal | Let's freeze this moment, and take a proper look at it. |
 
-## COLD OPEN — 0:00–1:05
+## ANATOMY OF A MONSTER
 
-| Time | 🎬 On screen | 🔊 Sound | 🎙 Voice-over |
-|---|---|---|---|
-| 0:00 | Total black. One particle of marine snow drifts up through frame. | Low hull hum. Slow breathing. | *(silence)* |
-| 0:03 | 📟 HUD flickers on: **2,000 M**. A second particle, a third. | Digital blip. | There is no sun down here. |
-| 0:06 | 📟 Temp types in: **+1.2 °C**. Pressure: **201 ATM**. | Two soft ticks. | There never was. |
-| 0:09 | Slow push forward. Frost crawls along the edge of the porthole. | Ice crackle. | Two hundred atmospheres. Water a breath above freezing. |
-| 0:13 | Your breath fogs the glass. A gloved hand wipes it. | Glove squeak. | And a darkness so thick it feels solid. |
-| 0:16 | **CLUNK** — lamp snaps on. Beam slices the black. Particles blaze. | Heavy switch, electric whine. | You switch on the lamp. |
-| 0:19 | Beam sweeps left. Empty. | Servo whirr. | Nothing. |
-| 0:21 | Beam sweeps right. Empty. A particle flares and fades. | Servo whirr. | You're alone. |
-| 0:24 | Hold on the empty beam. | Heartbeat fades in. | *(pause)* |
-| 0:26 | At the very edge of the beam — a huge circular reflection flashes. Gone. | Sub-bass stab. | You're not. |
-| 0:28 | Rewind 10 frames, freeze, zoom into the flash: a ring. An iris. | Tape-rewind zip. | Something has been watching you since the second you arrived. |
-| 0:33 | The pupil slowly contracts. | Wet, organic creak. | With an eye the size of a basketball. |
-| 0:36 | 💥 **LARGEST EYE ON EARTH** | Impact hit. | The largest eye of any animal alive. |
-| 0:39 | Hard cut to black. | Total silence (1 s). | |
-| 0:40 | 💥 Title: **THE COLOSSAL SQUID** | Deep boom + long reverb. | Today we're going down to meet the colossal squid. |
-| 0:44 | Subtitle types on: *What would happen to you?* | Typewriter ticks. | And find out exactly what would happen to you if you met one. |
-| 0:48 | ⚡ Teaser flash: a tentacle club with rotating hooks (0.5 s). | Whoosh. | Hooks that *rotate*. |
-| 0:50 | ⚡ Flash: black beak snapping shut. | Crack. | A beak that cuts like shears. |
-| 0:52 | ⚡ Flash: 3 hearts pulsing blue. | Triple thump. | Three hearts. Blue blood. |
-| 0:55 | ⚡ Flash: a vast scarred shape passes in total darkness. | Distant *click… click…* | And the one creature on Earth it is truly afraid of. |
-| 0:59 | 💥 Text: **NOBODY FILMED AN ADULT ONE. EVER.** | Impact. | No one has ever filmed an adult in the wild. |
-| 1:02 | Cut to surface: grey storm, waves, an iceberg. | Wind roar, waves. | So let's go see one. |
+| Time | Shot | Text on screen | Sound | Voice-over |
+|---|---|---|---|---|
+| 8:23 | squid3d cam:"scale" human:1 |  | reveal | Here it is, next to you. |
+| 8:27 | squid3d cam:"scale" human:1 label:"weight" | UP TO / ~500 KG | impact | Weight: up to around half a ton. |
+| 8:30 | diagram k:"compare" items:["horse"] labels:["A HORSE"] |  | pop, squelch | Picture a horse. Now give it eight arms, two tentacles, and a beak. |
+| 8:36 | card lines:["THE BIGGEST ONES?","NOBODY KNOWS."] tone:"white" glitch:1 | THE BIGGEST ONES? / NOBODY KNOWS. | glitch | And the biggest ones out there could be heavier still. Nobody knows. |
+| 8:42 | squid3d cam:"scale" human:1 label:"length" ruler:1 |  | tape | Length: up to about ten meters, by most estimates. |
+| 8:46 | diagram k:"compare" items:["bus","house3"] labels:["ALMOST A CITY BUS","A 3-STORY BUILDING"] |  | pop, pop | Almost as long as a city bus. Stand it on its tail, and it would look into the windows of a three-story building. |
+| 8:56 | squid3d cam:"scale" human:1 label:"mantle" |  | pulse | Its main body, the mantle, is about two and a half meters. Taller than any doorway in your house. |
+| 9:05 | diagram k:"cousins" |  | whoosh, thud, spring | Its cousin, the giant squid, is longer and thinner. But the colossal is heavier. A lot heavier. |
+| 9:12 | squid3d cam:"armdive" |  | whoosh | Eight arms. Two long hunting tentacles. |
+| 9:15 | squid3d cam:"club" |  | shing | And at the end of each tentacle, a club, armed with hooks. |
+| 9:21 | flash kind:"hooks" rotate:1 long:1 |  | ratchet | Each hook swivels on its base. |
+| 9:24 | diagram k:"hookpull" |  | ratchet, tear | When prey pulls away, the hook doesn't rip out. It turns, and digs in deeper. |
+| 9:31 | card lines:["NO OTHER SQUID","ON EARTH HAS THIS"] tone:"red" | NO OTHER SQUID / ON EARTH HAS THIS | impact | No other squid on Earth has weapons like this. |
+| 9:35 | squid3d cam:"beak" p:[0,0.5] |  | tunnel | Now, look between the arms. |
+| 9:38 | squid3d cam:"beak" p:[0.5,1] |  | crack | The beak. |
+| 9:41 | card lines:["THE LARGEST BEAK","OF ANY SQUID"] tone:"white" | THE LARGEST BEAK / OF ANY SQUID | impact | The largest beak of any squid. |
+| 9:44 | flash kind:"beak" long:1 |  | snap | Hard as horn, with edges that work like a pair of metal shears. |
+| 9:50 | diagram k:"beaks" |  | clatter | That's why beaks are what we usually find. Whales can digest everything else. Not the beak. |
+| 9:57 | squid3d cam:"xray" hearts:0 |  | scanner | Inside, it gets even stranger. |
+| 10:00 | squid3d cam:"xray" hearts:1 |  | thump | One heart. |
+| 10:02 | squid3d cam:"xray" hearts:2 |  | thump | Two hearts. |
+| 10:04 | squid3d cam:"xray" hearts:3 |  | thump | Three. |
+| 10:05 | squid3d cam:"xray" hearts:3 flow:1 |  | flow | Two push blood through the gills. The third drives it through the body. |
+| 10:11 | squid3d cam:"xray" hearts:3 blue:1 |  | shimmer | And the blood is blue. Built on copper instead of iron. |
+| 10:17 | diagram k:"brain" p:[0,0.5] |  | lownote | Its brain is shaped like a donut, wrapped around its throat. |
+| 10:22 | diagram k:"brain" p:[0.5,1] warn:1 |  | alarm | Swallow something too big, and the food would press against its own brain. |
+| 10:28 | flash kind:"beak" chop:1 |  | chop, chop, chop, chop | So it slices every meal into small pieces first. |
+| 10:32 | squid3d cam:"still" |  | drone_low | And here is the strangest number of all. |
+| 10:36 | diagram k:"food" |  | impact | Scientists estimate a half-ton colossal squid needs only about thirty grams of food a day. Roughly one slice of bread. |
+| 10:45 | squid3d cam:"still" clock:1 |  | clock_fast | It doesn't chase. It waits. Still, for hours. Saving every drop of energy. |
+| 10:51 | card lines:["NOT A HUNTER."] tone:"white" | NOT A HUNTER. | impact | It isn't a hunter. |
+| 10:53 | card lines:["AN AMBUSH."] tone:"red" huge:1 | AN AMBUSH. | impact_big | It's an ambush. |
+| 10:56 | void lamp:1 beam:[0,0] inside:1 bpm:150 |  | heartbeat_fast | And you are hanging right in front of it. |
 
----
+## THE ATTACK
 
-## SCENE 1 — THE DESCENT — 1:05–3:30
-*Open loop planted: "Why does it need an eye that big?"*
+| Time | Shot | Text on screen | Sound | Voice-over |
+|---|---|---|---|---|
+| 11:00 | void lamp:1 beam:[0,0] |  | hull_tick | Nothing happens. |
+| 11:02 | void lamp:1 beam:[0,0] timer:[0,10] |  | tick, tick, tick | One second. Ten. |
+| 11:05 | void lamp:1 beam:[0,0] timer:[10,60] |  | exhale | A full minute. |
+| 11:08 | void lamp:1 beam:[0,-0.45] inside:1 |  | click, servo | You decide to angle the lamp away. Maybe the light is bothering it. |
+| 11:14 | attack v:"strike" |  | smash, glass_shriek | *(silence)* |
+| 11:16 | attack v:"slowmo" |  | slowroar | Strike! |
+| 11:18 | attack v:"rake" |  | scrape, alarm | The tentacles fire in a fraction of a second. Hooks rake across the steel. |
+| 11:25 | attack v:"wrap" |  | constrict | Eight arms close around the sphere. |
+| 11:28 | attack v:"glass" |  | suckers | Suckers. Hooks. Red flesh pressed flat against the glass. |
+| 11:32 | attack v:"spin" |  | spin_groan | It's pulling you in. Toward the beak. |
+| 11:36 | card lines:["500 KG OF MUSCLE","vs 2 TONS OF STEEL"] tone:"red" | 500 KG OF MUSCLE / vs 2 TONS OF STEEL | impact | Half a ton of muscle against two tons of steel. |
+| 11:40 | freeze q:"WHAT HAPPENS TO YOU?" |  | scratch | So, what would actually happen to you? |
+| 11:44 | split side:"both" |  | whoosh | Two scenarios. |
+| 11:46 | split side:"inside" |  | ding | Inside the sphere, you survive. Steel is the one thing it cannot cut. |
+| 11:52 | attack v:"cable" tension:[120,180] |  | alarm, twang | But you're hanging from a single cable, and it's starting to strain. |
+| 11:58 | split side:"outside" |  | drone_low | Now imagine you are outside. |
+| 12:01 | card lines:["REAL ANSWER:","THE PRESSURE GETS YOU FIRST"] tone:"white" | REAL ANSWER: / THE PRESSURE GETS YOU FIRST | impact | Honestly? The pressure would kill you long before it ever touched you. |
+| 12:06 | split side:"outside" suit:1 |  | shimmer | But say some impossible suit keeps you alive. |
+| 12:10 | flash kind:"hooks" rotate:1 red:1 |  | ratchet, thud | The hooks sink in. And turn. |
+| 12:13 | split side:"outside" pull:1 |  | constrict | The arms drag you in, toward the beak. |
+| 12:17 | flash kind:"beak" open:1 |  | crack, silence | And the beak doesn't bite. It slices. Piece by piece. Small enough to fit through that donut-shaped brain. |
+| 12:25 | black  |  |  | Slowly. In total darkness. Two kilometers from the nearest human being. |
+| 12:31 | attack v:"spin" |  | spin_groan | *(silence)* |
+| 12:33 | attack v:"freeze" |  | stop | And then, it freezes. |
+| 12:36 | eye zoom:[1.1,1.15] pupil:[0.7,0.7] look:[0,0.6] |  | creak | It's not looking at you anymore. |
+| 12:39 | card lines:["IT'S SEEN SOMETHING."] tone:"white" | IT'S SEEN SOMETHING. | lownote | It's seen something. |
 
-| Time | 🎬 On screen | 🔊 Sound | 🎙 Voice-over |
-|---|---|---|---|
-| 1:05 | Drone shot: a tiny ship on a black-grey ocean. Iceberg on horizon. | Wind, gulls. | The Southern Ocean. The sea around Antarctica. |
-| 1:09 | Wave smashes over the bow. | Water crash. | The coldest, angriest ocean on the planet. |
-| 1:12 | 💥 **WAVES UP TO 20 M** over a wave cresting. | Hit. | Storms here don't stop for weeks. Waves stand taller than a six-story building. |
-| 1:17 | Crane swings a steel sphere over the side. | Hydraulic groan, chains. | This is your ride. |
-| 1:19 | Cutaway diagram: sphere, **2.1 m** wide, wall thickness labeled. | Blueprint ticks. | A steel sphere barely wider than your arm span. |
-| 1:23 | Inside: you squeeze into the seat. Hatch swings shut. | Hatch slam, bolt spin. | One window. One cable to the surface. |
-| 1:26 | Bolts locking, one by one (3 quick close-ups). | Clank-clank-clank. | And no way out until they pull you back. |
-| 1:29 | Sphere splashes in, bubbles everywhere. | Splash, muffled underwater roar. | Descent begins. |
-| 1:32 | 📟 **0 M → 10 M**. Turquoise water, sun rays. | Bubbles, music starts (low pulse). | |
-| 1:35 | 📟 **30 M**. Colors shifting. A red emergency tag on the wall turns grey-brown. | Pulse. | At thirty meters, red disappears first. |
-| 1:39 | You prick a finger on a sharp edge; the drop of blood looks **green**. | Small "tss" of pain. | Cut yourself here and your blood looks green. |
-| 1:43 | 💥 **RED LIGHT: GONE** | Hit. | The water has eaten the red end of the light. |
-| 1:46 | 📟 **100 M**. Deep blue. A jellyfish drifts past the window. | Soft chime. | |
-| 1:49 | 📟 **200 M**. Light dims sharply. | Pulse drops lower. | Two hundred meters. The twilight zone. |
-| 1:52 | First bioluminescent sparks blink around the sphere. | Glassy twinkles. | Here, animals start making their own light. |
-| 1:55 | Lanternfish flash past in a silver burst. | Swish. | Nearly three out of four creatures down here can glow. |
-| 1:59 | A siphonophore pulses blue, uncoiling. | Shimmer. | To lure prey. To scare predators. To find each other in the dark. |
-| 2:04 | 📟 **500 M · +2 °C**. Condensation beads on the walls. | Drip. | Five hundred meters. Two degrees. |
-| 2:08 | Your breath starts to show as vapor. | Exhale. | Now you can see your own breath. |
-| 2:11 | 📟 **800 M**. The last faint blue fades from the window. | Pulse fades. | |
-| 2:14 | 📟 **1,000 M**. Screen cuts to **pure black** for 2 s, only HUD. | Total silence. | *(silence)* |
-| 2:17 | HUD only. A single line types: *MIDNIGHT ZONE*. | One tick. | One thousand meters. The last photon of sunlight is behind you. |
-| 2:22 | 📟 Pressure counter rolls fast to **101 ATM**. | Rapid ticking. | From here to the seafloor, it's night. Forever. |
-| 2:26 | Animated diagram: a hand. Cars stack onto the palm, one by one. | Thud ×7. | The pressure on the palm of your hand now? About the weight of seven cars. |
-| 2:32 | Diagram: human lungs shrink to a golf ball. | Squeeze, pop. | Without the sphere, the air in your lungs would be crushed smaller than a golf ball. |
-| 2:37 | 💥 **SURVIVAL WITHOUT THE SPHERE: 0 SECONDS** | Hit. | You wouldn't survive a second. |
-| 2:40 | Back inside. 📟 **1,200 M… 1,400 M…** counters spinning. | Pulse returns. | |
-| 2:43 | The hull: a deep metallic **groan**. Camera shakes slightly. | Long steel groan. | The hull groans. |
-| 2:46 | Close-up: your eyes flick to the wall. | Heartbeat up. | That's normal, you tell yourself. That's just steel settling under pressure. |
-| 2:51 | 📟 **1,600 M**. Bolt head close-up: a bead of water forms. | Single drip — amplified. | |
-| 2:54 | The bead doesn't grow. You exhale. | Long breath out. | It's fine. |
-| 2:57 | 📟 **1,800 M**. Something large flashes past the window — too fast to see. | Whoosh + sub hit. | What was that? |
-| 3:00 | You swing the lamp. Nothing but snow. | Servo. | *(silence)* |
-| 3:03 | 📟 **2,000 M · +1.2 °C · 201 ATM**. Thrusters cut out. | Engine wind-down, then silence. | Two thousand meters. |
-| 3:07 | Wide shot: the tiny sphere, a single beam, endless black around it. | Deep drone. | Twenty tons pressing on every hand-sized patch of steel around you. |
-| 3:12 | Slow pull-back into darkness — the sphere becomes a speck. | Drone swells. | This is its home. |
-| 3:16 | 💥 Map: Antarctica, a red dot glowing in the Ross Sea. | Ping. | And somewhere out here, it is waiting. |
-| 3:20 | Back to the dot. Zoom into black. | Whoosh. | But first, you need to know what you're dealing with. |
-| 3:25 | Transition: the screen burns into old film grain. | Projector rattle. | Because for a hundred years, nobody did. |
+## THE ONE IT FEARS
 
----
+| Time | Shot | Text on screen | Sound | Voice-over |
+|---|---|---|---|---|
+| 12:42 | black  |  | click_whale | *(silence)* |
+| 12:43 | void lamp:1 beam:[0,0] jitter:1 |  | click_whale, click_whale | Click. You don't hear it with your ears. |
+| 12:47 | void lamp:1 beam:[0,0] jitter:2 shake:1 |  | click_whale, click_whale | You feel it in your chest. |
+| 12:51 | sonar  |  | clicks_accel | Click. Click. Click-click-click-click. |
+| 12:54 | card lines:["SPERM WHALE"] tone:"blue" huge:1 | SPERM WHALE | impact_big | A sperm whale. Hunting. |
+| 12:57 | diagram k:"echo" |  | ping, ping | It sees with sound. Echolocation. |
+| 13:00 | diagram k:"db" |  | click_whale, impact | Its clicks are among the loudest sounds made by any animal on Earth. Around two hundred and thirty decibels underwater. |
+| 13:08 | diagram k:"glowwhale" p:[0.3,1] real:1 |  | shimmer | Remember the glowing plankton? There it is. |
+| 13:12 | eye zoom:[0.8,0.95] pupil:[0.6,0.45] look:[0,0.6] wake:1 |  | heartbeat | This is what that eye was built for. This is what it has been watching for its whole life. |
+| 13:20 | attack v:"release" |  | release | It lets go of you. |
+| 13:23 | attack v:"flee" |  | jet | It runs. |
+| 13:25 | whale3d cam:"emerge" |  | rumble, displace | Too late. |
+| 13:29 | whale3d cam:"emerge2" |  | subhit | A bull sperm whale. |
+| 13:32 | diagram k:"compare" items:["eleph8"] labels:["8 AFRICAN ELEPHANTS"] | ~50 TONS | elephant_thud, impact | Fifty tons. As heavy as eight African elephants. |
+| 13:36 | diagram k:"compare" items:["house6"] labels:["A 6-STORY BUILDING"] |  | pop | Eighteen meters long. Stand it up, and it reaches the top of a six-story building. |
+| 13:43 | diagram k:"whalestats" |  | pop, pop | It dove here from the surface on a single breath. It can stay down for more than an hour. |
+| 13:51 | diagram k:"whalebrain" |  | pop | And inside that giant head is the largest brain of any animal that has ever lived. About five times heavier than yours. |
+| 14:01 | whale3d cam:"skin" |  | drone_low | Now look at its skin. |
+| 14:04 | whale3d cam:"skin" mark:"ring" | SUCKER SCARS | impact | Rings left by suckers. |
+| 14:07 | whale3d cam:"skin" mark:"gouge" | HOOK SCARS | impact | Long gouges from hooks. |
+| 14:10 | whale3d cam:"skin" mark:"all" |  | ticks_fast | Every single one of them, a fight with something like the animal next to you. |
+| 14:17 | whale3d cam:"battle" p:[0,0.5] |  | smash, scrape | The squid strikes first. Hooks, straight into the whale's face. |
+| 14:21 | whale3d cam:"battle" p:[0.5,1] ink:1 |  | ink | It sprays a cloud of ink. |
+| 14:24 | whale3d cam:"battle" sonar:1 ink:1 | USELESS | ping, impact | Useless. The whale sees with sound, not light. |
+| 14:28 | card lines:["50,000 KG","vs 500 KG"] tone:"red" | 50,000 KG / vs 500 KG | impact_big | Fifty thousand kilos, against five hundred. |
+| 14:32 | whale3d cam:"battle" thrash:1 |  | thrash | The hooks leave fresh scars. But the whale doesn't stop. |
+| 14:36 | whale3d cam:"jaw" |  | jaw | It only has teeth in its lower jaw. It doesn't chew. |
+| 14:42 | whale3d cam:"jaw" snap:1 |  | slam | It swallows. |
+| 14:44 | black  |  |  | *(silence)* |
 
-## SCENE 2 — A MONSTER WITH NO FACE — 3:30–5:15
+## THE ASCENT
 
-| Time | 🎬 On screen | 🔊 Sound | 🎙 Voice-over |
-|---|---|---|---|
-| 3:30 | Sepia "archival" style: 💥 **1925**. A whaling ship. | Projector rattle, sea. | 1925. |
-| 3:33 | Whalers on the deck of a flensed sperm whale. | Saws, gulls. | Whalers cut open the stomach of a sperm whale. |
-| 3:37 | Two severed arm pieces slide out onto the deck. | Wet slap. | Inside are two pieces of arm. |
-| 3:40 | Macro: not suckers — **hooks**. | Metallic ring. | But they aren't covered in suckers. They're covered in hooks. |
-| 3:44 | The hooks rotate on their bases (animated). | Ratchet clicks. | Sharp, curved… and they swivel. |
-| 3:48 | A scientist sketches by lamplight. Name appears: *Mesonychoteuthis hamiltoni*. | Pen scratch. | A scientist named Guy Robson describes a new species from those two fragments alone. |
-| 3:54 | 💥 **NAME: COLOSSAL SQUID · BODY: NEVER SEEN** | Hit. | The colossal squid. But no one has seen the animal itself. |
-| 3:59 | Timeline bar sweeps across: 1925 → 2025. | Whoosh. | For decades, all we find are traces. |
-| 4:02 | Pile of black beaks pours out of a whale stomach diagram. | Clattering. | Beaks in the stomachs of sperm whales. Hundreds of them. |
-| 4:06 | A whale's skin: circular scars and long scratches. | Low drone. | Scars on whale skin. |
-| 4:09 | A tangled net hauled up with a red scrap. | Winch. | Scraps in fishing nets. |
-| 4:12 | 💥 **FEBRUARY 2007 · ROSS SEA** | Hit. Music turns urgent. | Then — February 2007. |
-| 4:15 | Night. A fishing boat under floodlights, snow blowing. | Wind, diesel engine. | A New Zealand boat is fishing for toothfish, a kilometer and a half down. |
-| 4:20 | The longline goes taut. The reel slows. | Line creak. | The line goes tight. |
-| 4:23 | Fisherman leans over the rail, eyes wide. | Heartbeat. | On the hook, a fish. |
-| 4:26 | Under the floodlit water: something huge and red holding the fish. | Sub-bass. | And wrapped around the fish — something that will not let go. |
-| 4:30 | 📟 Clock overlay spins: **0:00 → 2:00 hours**. | Rapid tick. | It took nearly two hours to bring it aboard. |
-| 4:34 | A red mass breaks the surface. Crew recoil. | Splash + crowd gasp. | When it hit the deck, the crew understood: nobody had ever seen anything like it. |
-| 4:39 | 💥 **495 KG** slams across the frame. | Massive hit. | Four hundred and ninety-five kilograms. |
-| 4:42 | Comparison pop-up: a grand piano. | Piano chord. | Heavier than a grand piano. |
-| 4:45 | 💥 **HEAVIEST INVERTEBRATE EVER FOUND** | Hit. | The heaviest invertebrate humans have ever held. |
-| 4:49 | Freezer lid closes. Cut to museum: a tank in Te Papa, Wellington. | Freezer clunk, museum hush. | It's frozen whole and taken to a museum in New Zealand, where it remains today. |
-| 4:55 | 💥 **2025**. Modern ROV feed: a small, glassy, translucent squid in a spotlight. | Sonar ping. | And the first video of a live colossal squid in its natural home? |
-| 5:00 | 📟 ROV overlay: **~600 M · ~30 CM**. | Data blips. | That only came in 2025 — a hundred years after we learned it existed. |
-| 5:05 | The tiny squid drifts, like glass. | Soft chime. | A baby. Thirty centimeters long. Almost transparent. |
-| 5:09 | Cut back to your sphere in total dark. | Silence. | An adult, in its own world, at its own depth? Nobody's ever filmed one. |
-| 5:13 | 💥 **UNTIL NOW.** | Hit. | Until now. |
-
----
-
-## SCENE 3 — FIRST CONTACT — 5:15–7:30
-*Pays off the cold-open eye. Opens: "What is it afraid of?"*
-
-| Time | 🎬 On screen | 🔊 Sound | 🎙 Voice-over |
-|---|---|---|---|
-| 5:15 | Inside the sphere. You kill the thrusters. Lamp sweeps slowly. | Thruster spin-down. | You cut the engines. |
-| 5:18 | Marine snow drifts through the beam, close-up macro. | Near-silence, ear-ringing tone. | Silence. Just marine snow, falling through the light. |
-| 5:22 | One flake lands on the window, macro: it's dead plankton. | Faint tick. | Dead plankton. Fragments of life from the surface. Some of it has been falling for weeks. |
-| 5:28 | The beam drifts right… and catches **dark red**. | Low cello note. | Then, at the edge of the light — a color. |
-| 5:31 | The beam slides across mottled red skin. Huge. Moving very slowly. | Wet, slow slide. | Dark red. Almost black. |
-| 5:35 | Split screen: same skin in "natural" deep-sea light — invisible black. | Whoosh. | Down here red light doesn't exist, so red skin looks black. Perfect camouflage. |
-| 5:41 | Back: the skin, lit by your lamp. | Heartbeat starts. | Only your lamp gives it away. |
-| 5:44 | The beam keeps sliding… pause. | Heartbeat. | And then you see it. |
-| 5:46 | **The eye** fills the entire window. (Thumbnail shot.) | Massive sub-bass swell. | The eye. |
-| 5:49 | Reflection in its pupil: your tiny sphere and the beam. | Glass ring. | You can see yourself in it. |
-| 5:52 | 💥 **~27 CM MEASURED · LIKELY BIGGER IN LIFE** | Hit. | Twenty-seven centimeters across on a dead specimen — probably bigger alive. |
-| 5:57 | Size comparison pops: dinner plate → basketball. | Two pops. | Wider than a dinner plate. |
-| 6:00 | X-ray cutaway: the lens inside — an orange. | Squelch. | The lens inside is the size of an orange. |
-| 6:04 | Below the eye, two small lights glow blue. | Soft hum. | And beside the eyes — small glowing organs. Photophores. |
-| 6:08 | The lights brighten, like headlights. | Hum rises. | Scientists think it may use them like headlights. |
-| 6:12 | Pull back slowly. Silence. | Silence. | *(pause)* |
-| 6:14 | 💥 Question types on screen: *Why such a big eye… where there's no light?* | Typewriter. | But why would anything need an eye this big… in a place with no light? |
-| 6:19 | Animated diagram: dark water; a huge whale silhouette swims through glowing plankton, which flashes around it. | Whale *clicks*, sparkles. | Here's what scientists think. When something huge moves through the dark… |
-| 6:26 | The plankton cloud ignites in an outline of the whale. | Shimmer crescendo. | …it disturbs glowing plankton, and the water lights up around it. |
-| 6:31 | Diagram: squid eye at left, distance line grows: **120+ M**. | Ruler ticks. | An eye this size can catch that glow from more than a hundred meters away. |
-| 6:37 | 💥 **IT'S NOT A HUNTING EYE.** | Hit. | It's not an eye for hunting. |
-| 6:40 | 💥 **IT'S AN EARLY-WARNING SYSTEM.** | Hit. | It's an early-warning system. |
-| 6:43 | Back to the real eye. It shifts slightly toward you. | Wet creak. | It isn't looking for food. It's looking for the thing it fears. |
-| 6:48 | Wide: your sphere, glowing, humming in the dark. | Your sphere's hum, amplified. | But you are big. You glow. You hum. |
-| 6:52 | The eye's pupil contracts again. | Creak. | And right now, it's deciding what you are. |
-| 6:56 | Inside: close-up of your hand gripping the armrest. 📟 Heart-rate overlay: **142 BPM**. | Heartbeat, fast. | Your pulse — one forty-two. |
-| 7:00 | Sweat on your knuckles. | Breathing, shallow. | Your palms are wet, even though it's five degrees in here. |
-| 7:04 | You hold your breath. Camera creeps closer to the window. | Breath stops. | You realize you're breathing too loud. |
-| 7:08 | The eye doesn't blink. | Silence. | It can't hear you. |
-| 7:10 | 💥 *…can it?* | Single low note. | Can it? |
-| 7:12 | The red mass begins to rise slowly out of the beam. | Water displacement whoosh. | Then it moves. |
-| 7:15 | Body passes the window — it keeps going, and going. | Long wet slide. | And it just keeps going. |
-| 7:19 | The fins pass last, rippling. | Fin flutter. | |
-| 7:22 | The beam is empty again. | Silence. | Where did it go? |
-| 7:25 | Cut to 3D side view — the full animal, slowly revolving. | Whoosh + reveal hit. | Let's freeze the moment… and take a proper look at it. |
-
----
-
-## SCENE 4 — ANATOMY OF A MONSTER — 7:30–9:45
-
-| Time | 🎬 On screen | 🔊 Sound | 🎙 Voice-over |
-|---|---|---|---|
-| 7:30 | 3D scale shot: squid with a **1.8 m human** silhouette beside it. (Rendered — `3d-scale.png`.) | Reveal swell. | Here it is — next to you. |
-| 7:34 | 💥 **UP TO 500 KG** | Hit. | Weight: up to half a ton. |
-| 7:37 | Comparison: seven adult silhouettes stack onto a scale. | Thud ×7. | Like seven grown men. |
-| 7:40 | 💥 **ESTIMATED 600–700 KG?** with a "?" pulsing. | Glitch hit. | And the biggest ones might be heavier still. Nobody knows. |
-| 7:45 | Ruler sweeps along the body: **~9–10 M** (estimated). | Measuring tape zip. | Length: up to around ten meters, by most estimates. |
-| 7:49 | Highlight: the mantle glows; label **MANTLE ~2.5 M**. | Pulse. | The main body — the mantle — is about two and a half meters. |
-| 7:53 | Side-by-side: giant squid (long, thin) vs colossal (thick, heavy). | Two whooshes. | Its cousin, the giant squid, is longer. |
-| 7:57 | The colossal squid "drops" onto a scale; the giant squid bounces up. | Heavy thud, light spring. | But the colossal is heavier. A lot heavier. |
-| 8:01 | Camera swoops down an arm toward the tentacle tip. | Whoosh. | Eight arms. Two long hunting tentacles. |
-| 8:05 | Macro on the club: rows of **hooks**. | Metallic shing. | And at the tip of each tentacle — a club armed with hooks. |
-| 8:09 | One hook rotates 90° on its base. | Ratchet click. | Each hook swivels on its base. |
-| 8:12 | Animation: prey pulls away — hook rotates *with* it, digging deeper. | Tearing sound. | When prey pulls, the hook doesn't tear out. It turns — and digs in deeper. |
-| 8:18 | 💥 **NO OTHER SQUID HAS THIS** | Hit. | No other squid on Earth has weapons like this. |
-| 8:21 | Camera dives into the center of the arms. Darkness… | Wet tunnel whoosh. | Now look between the arms. |
-| 8:24 | The **beak** opens. Black, hooked, like a parrot's. | Hard *crack*. | The beak. |
-| 8:27 | 💥 **LARGEST BEAK OF ANY SQUID** | Hit. | The largest of any squid. |
-| 8:30 | Beak snaps a carrot-sized rod clean in two (illustrative). | Snap. | Made of chitin and protein. Its edge works like a pair of metal shears. |
-| 8:35 | Cutaway: whale stomach full of beaks. | Clatter. | Which is why beaks are what we find — whales digest everything else. Beaks, they can't. |
-| 8:41 | Transition: skin turns transparent — X-ray mode. | Scanner hum. | Inside, it gets stranger. |
-| 8:44 | **Heart #1** pulses. 💥 **1** | Thump. | One heart. |
-| 8:46 | **Heart #2** pulses. 💥 **2** | Thump. | Two hearts. |
-| 8:48 | **Heart #3** pulses. 💥 **3** | Thump. | Three. |
-| 8:50 | Arrows: two pump through the gills, one through the body. | Flow whoosh. | Two push blood through the gills. The third drives it through the body. |
-| 8:55 | Blood vessels light up **blue**. | Glassy shimmer. | And the blood is blue — built on copper instead of iron. |
-| 9:00 | The brain highlights: a ring — a **donut** — around the throat. | Low ring tone. | Its brain is shaped like a donut… |
-| 9:04 | A tube (the esophagus) slides through the brain ring. | Squelch. | …wrapped around its throat. |
-| 9:07 | Animation: a big chunk of food squeezes through — the ring bulges red. ⚠️ | Alarm blip. | Swallow something too big, and it would press on its own brain. |
-| 9:12 | The beak minces food into tiny pieces. | Rapid chopping. | So it cuts every meal into small pieces first. |
-| 9:16 | Back to the full squid, hanging motionless. | Silence. | And here's the strangest number of all. |
-| 9:19 | A single small fish appears. 💥 **~30 G / DAY** | Hit. | Scientists estimate a half-ton colossal squid needs only about thirty grams of food a day. |
-| 9:26 | Comparison: one human dinner plate (heaped) vs. one tiny fish. | Plate clink, tiny "blip". | A single small fish. |
-| 9:29 | The squid hangs perfectly still. Particles drift past. Time-lapse clock spins. | Clock ticking, accelerated. | It doesn't chase. It waits. Still, for hours. Saving every drop of energy. |
-| 9:36 | 💥 **NOT A HUNTER.** | Hit. | It isn't a hunter. |
-| 9:38 | 💥 **AN AMBUSH.** | Bigger hit. | It's an ambush. |
-| 9:40 | Cut back to your sphere. The beam is empty. 📟 Heart-rate: **150 BPM**. | Heartbeat. | And you are hanging right in front of it. |
-
----
-
-## SCENE 5 — THE ATTACK — 9:45–11:30
-
-| Time | 🎬 On screen | 🔊 Sound | 🎙 Voice-over |
-|---|---|---|---|
-| 9:45 | Inside the sphere. Nothing in the beam. | Silence. Hull tick. | Nothing happens. |
-| 9:48 | 📟 A timer appears: **00:01… 00:02…** | Ticking. | One second. |
-| 9:50 | Timer: **00:10**. | Ticking. | Ten. |
-| 9:52 | Timer: **01:00**. You exhale. | Long exhale. | A full minute. |
-| 9:55 | Your hand moves to the lamp control. | Switch click. | You decide to angle the lamp away. Maybe the light is bothering it. |
-| 9:59 | The beam swings slowly left… | Servo. | |
-| 10:01 | **SMASH** — two tentacles explode out of the darkness at the window. | Huge impact + glass shriek. | *(silence on VO — let the hit land)* |
-| 10:02 | Slow-motion replay: hooks spread wide, inches from the glass. | Slowed roar. | Strike. |
-| 10:05 | Real-time: clubs hammer the hull. Screen shakes. | Metal shriek, like knives on a steel door. | The tentacles fire in a fraction of a second. Hooks rake the steel. |
-| 10:10 | 📟 HUD flashes red: **HULL CONTACT**. | Alarm beep. | |
-| 10:12 | Outside view: eight arms wrap around the sphere. | Wet constriction. | Eight arms close around the sphere. |
-| 10:15 | Inside: suckers and hooks press against the window, filling it. | Squeal of suckers on glass. | Suckers. Hooks. Red flesh pressed flat against the glass. |
-| 10:19 | The sphere begins to rotate. The beam spins across flesh, black, flesh. | Spinning groan. | It's pulling you in. Toward the beak. |
-| 10:23 | 💥 **500 KG OF MUSCLE vs. 2 TONS OF STEEL** | Hit. | Five hundred kilos of muscle against two tons of steel. |
-| 10:28 | Freeze frame. Desaturate. Question appears: *What happens to you?* | Record-scratch stop. | So — what would actually happen to you? |
-| 10:32 | Split screen: left **INSIDE THE SPHERE**, right **OUTSIDE**. | Whoosh. | Two scenarios. |
-| 10:35 | Left: sphere intact, hooks skidding off steel. 💥 **YOU SURVIVE** | Ding. | Inside the sphere — you'd survive. Steel is the one thing it can't cut. |
-| 10:41 | 📟 Cable tension: **120%… 150%… 180%** | Rising alarm. | But you're hanging on a single cable. And it's starting to strain. |
-| 10:46 | Cable vibrates, drawn taut like a guitar string. | Twang. | |
-| 10:48 | Right panel: a diver silhouette in a fantasy armored suit. | Darker drone. | Now imagine you're outside. |
-| 10:51 | 💥 **REAL ANSWER: THE PRESSURE KILLS YOU FIRST** | Hit. | Honestly? The pressure would kill you before it ever touched you. |
-| 10:56 | The fantasy suit glows — "let's pretend". | Shimmer. | But say some impossible suit protects you. |
-| 10:59 | Tentacle clubs strike. Hooks sink in and **rotate** (stylized, no gore). | Ratchet + muffled thud. | The hooks sink in… and turn. |
-| 11:03 | Eight arms close in, pulling the silhouette toward the center. | Tightening. | The arms pull you in, toward the beak. |
-| 11:07 | The beak opens. Cut to black just before contact. | Crack → silence. | And the beak doesn't bite. It slices. Piece by piece. Small enough to pass through that ring-shaped brain. |
-| 11:14 | Black screen. | Silence 2 s. | Slowly. In total darkness. Two kilometers from another human being. |
-| 11:19 | Back inside the sphere: spinning, flesh on the glass… | Spinning groan resumes. | |
-| 11:22 | Suddenly — everything stops. The arms go rigid. | Abrupt silence. | And then… it freezes. |
-| 11:25 | The eye, pressed to your window, swivels **away** from you — into the dark. | Wet creak. | It's not looking at you anymore. |
-| 11:28 | 💥 *It's seen something.* | Single deep note. | It's seen something. |
-
----
-
-## SCENE 6 — THE ONE IT FEARS — 11:30–13:00
-
-| Time | 🎬 On screen | 🔊 Sound | 🎙 Voice-over |
-|---|---|---|---|
-| 11:30 | Black. | **CLICK.** Distant, dull. | |
-| 11:32 | The water vibrates; particles jitter in the beam. | **CLICK.** | You don't hear it with your ears. |
-| 11:34 | Your chest-cam shakes on each click. | **CLICK.** | You feel it in your chest. |
-| 11:36 | 📟 Sonar overlay: a huge return pulsing closer. | *click-click-click-click* accelerating. | Click. Click. Clickclickclick. |
-| 11:40 | 💥 **SPERM WHALE** | Massive hit. | A sperm whale. Hunting. |
-| 11:43 | Diagram: sound waves leaving the whale's head, bouncing off the squid. | Echo pings. | It sees with sound — echolocation. |
-| 11:47 | 💥 **~230 dB** underwater | Hit. | Its clicks are some of the loudest sounds any animal on Earth can make. |
-| 11:52 | Far in the dark: plankton starts flashing in a giant moving outline. | Shimmer swelling. | Remember the glowing plankton? There it is. |
-| 11:56 | The squid's eye — locked on the glow. | Heartbeat. | This is what the eye was for. This is what it's been watching for its whole life. |
-| 12:01 | The squid releases the sphere. Arms peel away. | Wet release. | It lets go of you. |
-| 12:04 | It jets backward into darkness. | Jet whoosh. | It runs. |
-| 12:06 | Too late: the head of the whale emerges — square, scarred, like a battering ram. | Deep rumble, displacement. | Too late. |
-| 12:09 | 3D: the whale's head fills the frame, sphere a speck beside it. | Sub-bass. | A bull sperm whale. |
-| 12:12 | 💥 **18 M · 50 TONS** | Hit. | Eighteen meters. Fifty tons. |
-| 12:15 | 💥 **ONE BREATH · 1+ HOUR · 2,000+ M** | Hit. | It dove here from the surface on a single breath, and can stay down for over an hour. |
-| 12:21 | Camera glides along its skin: circles and long scratches. | Slow drone. | Look at its skin. |
-| 12:24 | Zoom on circular scars. 💥 **SUCKER SCARS** | Hit. | Rings from suckers. |
-| 12:27 | Zoom on long gouges. 💥 **HOOK SCARS** | Hit. | Long gouges from hooks. |
-| 12:30 | Scars glow red one by one. | Ticks. | Every one of them — a fight with something like the animal next to you. |
-| 12:34 | The battle: tentacles lash onto the whale's head. (Rendered — `3d-battle.png`.) | Explosion of sound. | The squid attacks first. Hooks straight into the whale's face. |
-| 12:38 | Ink cloud bursts black across the beam. | Ink "whump". | It sprays ink. |
-| 12:40 | 💥 **USELESS** — sonar overlay sees straight through the ink. | Sonar ping through. | Useless. The whale sees with sound, not light. |
-| 12:44 | 💥 **50,000 KG vs 500 KG** | Hit. | Fifty thousand kilos against five hundred. |
-| 12:47 | The whale shakes its head violently; arms whip loose. | Thrashing water. | The hooks leave new scars. But the whale doesn't stop. |
-| 12:51 | The narrow lower jaw swings open — teeth only on the bottom. | Jaw creak. | It has teeth only in its lower jaw. It doesn't chew. |
-| 12:55 | Jaw snaps shut. Cut to black. | **SLAM.** Then silence. | It swallows. |
-| 12:57 | Black. 3 seconds of nothing. | Silence. | *(silence)* |
-
----
-
-## SCENE 7 — THE ASCENT — 13:00–13:45
-
-| Time | 🎬 On screen | 🔊 Sound | 🎙 Voice-over |
-|---|---|---|---|
-| 13:00 | Ink slowly clears in the beam. Empty water. One fragment spins. | Faint ringing. | When the ink clears, there's nothing left. |
-| 13:04 | A black beak sinks slowly through the beam. | Soft tick as it falls. | Years from now, someone may find one more beak in the stomach of a whale. |
-| 13:09 | The beak drifts out of the light. | Silence. | That's all that will be left of the monster you saw. |
-| 13:13 | 📟 Counters reverse: **2,000 → 1,500 → 1,000 M**. | Winch hum. Music: hopeful, aching. | They pull you up. |
-| 13:16 | 📟 **500 M**. The window turns from black to deep blue. | Swell. | Two hours to the surface. You don't say a word. |
-| 13:20 | Sun rays appear. 📟 **100 M**. | Light shimmer. | Somewhere below you, there may be thousands of them. |
-| 13:24 | 💥 **POPULATION: UNKNOWN · LIFESPAN: UNKNOWN · MAX SIZE: UNKNOWN** | Three soft hits. | We don't know how many. How long they live. How big they can get. |
-| 13:30 | Surface breach: sunlight, an iceberg, birds. | Splash, wind, gulls. | We've mapped the surface of the Moon in more detail than our own ocean floor. |
-| 13:36 | Camera tilts down under the waves, sinking back into black. | Music fades into drone. | The colossal squid isn't hiding from us. It just lives where we don't go. |
-| 13:41 | Teaser: in pitch black, a tiny glowing lure blinks on… a mouth of needle teeth opens beneath it. | Lure "ting", snap. | Next time, we go deeper — to where light isn't safety. It's a trap. |
-| 13:45 | Channel logo. 💥 **SUBSCRIBE — THE DESCENT CONTINUES.** | Boom. | Subscribe. We're only getting started. |
-
----
-
-## Sources (for the description)
-- Robson, G.C. (1925) — species described from arm fragments found in a sperm whale stomach.
-- 2007 Ross Sea specimen (~495 kg), Museum of New Zealand Te Papa Tongarewa.
-- Eye ~27 cm measured on the 2007 specimen; lens ~12 cm.
-- Nilsson et al. (2012), *Current Biology* — giant eyes as an early warning for sperm whales via bioluminescence.
-- Rosa & Seibel (2010), *Journal of Fish Biology* — estimated ~30 g of food/day for a 500 kg squid.
-- First footage of a live colossal squid in the wild: 2025, Schmidt Ocean Institute expedition, South Sandwich Islands, ~600 m.
-- **The attack and the whale battle are dramatized reconstructions. No one has ever witnessed this in nature.** (Say this on screen in small text at 10:01 and 12:34.)
+| Time | Shot | Text on screen | Sound | Voice-over |
+|---|---|---|---|---|
+| 14:47 | void lamp:1 beam:[0,0] ink:1 |  | ring_soft | When the ink clears, there is nothing left. |
+| 14:51 | void lamp:1 beam:[0,0] beakfall:1 |  | tick | Years from now, someone might find one more beak in the stomach of a whale. |
+| 14:58 | void lamp:1 beam:[0,0] beakfall:2 |  |  | And that's all that will be left of the monster you saw. |
+| 15:03 | descent d:[2000,500] up:1 |  | winch | They pull you up. Two hours to the surface. You don't say a word. |
+| 15:10 | descent d:[500,60] up:1 |  | swell | Somewhere below you, there could be thousands of them. |
+| 15:14 | diagram k:"unknowns" |  | pop, pop, pop | We don't know how many there are. How long they live. How big they can really get. |
+| 15:22 | surface v:"calm" |  | splash, wind, gulls | We have better maps of the surface of Mars than of our own ocean floor. |
+| 15:28 | surface v:"calm" sink:1 |  | underwater | The colossal squid isn't hiding from us. It just lives where we never go. |
+| 15:35 | teaser  |  | lure, snap | Next time, we go deeper. Down to where light isn't safety. Light is a trap. |
+| 15:42 | endcard  |  | boom | Subscribe. We're only getting started. |
