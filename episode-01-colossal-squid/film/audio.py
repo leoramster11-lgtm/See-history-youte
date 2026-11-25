@@ -207,6 +207,7 @@ reg('glass', lambda: verb(norm(tone([2900, 2900 * 2.3, 2900 * 3.7], 1.5, 0.001, 
 reg('squelch', lambda: verb(norm(fftfilt(noise(0.35), 150, 1800) * env(0.35, 0.01, 0.3, 4) * (0.5 + 0.5 * np.sin(2 * np.pi * 30 * t_(0.35)))) * 0.6, 0.5, 0.15))
 reg('lownote', lambda: verb(norm(tone([55, 110, 165, 220], 4.0, 0.005, 3, [1, .5, .3, .15])), 3.0, 0.4))
 reg('reveal', lambda: (st(norm(sum(sine(f, 3) for f in [110, 164.8, 220, 329.6]) * np.linspace(0, 1, int(3 * SR)) ** 1.5 * adsr(3, 0.1, 0.4)) * 0.6)))
+reg('ruler', lambda: S['tape']())
 reg('tape', lambda: st(norm(fftfilt(noise(1.4), 1500, 6000) * (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 40 * t_(1.4)))) * adsr(1.4, 0.02, 0.2)) * 0.35))
 reg('spring', lambda: verb(norm(sine(lambda t: 300 + 200 * np.sin(2 * np.pi * 9 * t) * np.exp(-t * 3), 0.9) * env(0.9, 0.002, 0.9, 4)) * 0.4, 0.6, 0.2))
 reg('shing', lambda: verb(norm(fftfilt(noise(0.6), 4000, 12000) * env(0.6, 0.005, 0.5, 4) + 0.5 * tone([3300, 4800], 0.6, 0.002, 4)) * 0.6, 1.5, 0.35))
@@ -248,20 +249,24 @@ def pad(freqs, d, cutoff=900, det=0.006, att=1.5, rel=1.5):
     for f in freqs:
         for k in (-1, 0, 1): y += saw(f * (1 + det * k), d) / len(freqs)
     return fftfilt(y, 30, cutoff) * adsr(d, att, rel)
+from functools import lru_cache
+_tone = lru_cache(None)(lambda fs, d, a, dec, amps: tone(list(fs), d, a, dec, list(amps)))
 def music(mood, d):
     t = t_(d); n = len(t)
     if mood == 'dark':
         y = pad([A1, A1 * 1.5, A2], d, 300) * 0.8 + fftfilt(noise(d), 40, 220) * 0.25 * (0.6 + 0.4 * np.sin(2 * np.pi * 0.07 * t))
-        for b in np.arange(2.0, d, 4.0): u = hit(48, 30, 2.0, 0.1, 200, 1.0, 0.2)[0] * 0.5; i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
+        U = hit(48, 30, 2.0, 0.1, 200, 1.0, 0.2)[0] * 0.5
+        for b in np.arange(2.0, d, 4.0): u = U; i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
         return verb(y, 3.0, 0.35, 2500)
     if mood == 'pulse':
         y = pad([A1, A1 * 1.5], d, 400) * 0.6
-        for b in np.arange(0, d, 60 / 90 / 2): u = (sine(A1, 0.2) + 0.4 * sine(A2, 0.2)) * env(0.2, 0.005, 0.18, 5) * 0.6; i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
+        U = (sine(A1, 0.2) + 0.4 * sine(A2, 0.2)) * env(0.2, 0.005, 0.18, 5) * 0.6
+        for b in np.arange(0, d, 60 / 90 / 2): u = U; i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
         return verb(y, 2.0, 0.25, 3000)
     if mood == 'archive':
         y = pad([A1 * 2, A1 * 2 * 1.189, A1 * 3], d, 500) * 0.35 + fftfilt(noise(d), 1500, 7000) * 0.02 * (rng.random(n) > 0.997)
         mel = [440, 392, 349.2, 329.6, 349.2, 392, 329.6, 293.7]
-        for k, b in enumerate(np.arange(0.5, d, 1.6)): u = tone([mel[k % 8], mel[k % 8] * 2], 1.6, 0.003, 3, [1, 0.25]) * 0.35; i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
+        for k, b in enumerate(np.arange(0.5, d, 1.6)): u = _tone((mel[k % 8], mel[k % 8] * 2), 1.6, 0.003, 3, (1, 0.25)) * 0.35; i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
         return verb(y, 3.0, 0.45, 4000)
     if mood == 'tension':
         y = pad([A2, A2 * 1.059, A2 * 1.5, 220 * 1.414], d, 1400) * (0.3 + 0.5 * t / d) * (0.75 + 0.25 * np.sin(2 * np.pi * 6 * t))
@@ -272,18 +277,20 @@ def music(mood, d):
             seg = min(4.6, d - b); u = pad(chords[k % 4], seg, 1800, 0.004, 1.2, 1.4) * 0.6; i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
         return verb(y, 3.5, 0.5, 6000)
     if mood == 'action':
+        HT = fit(hit(70, 40, 0.18, 0.4, 900, 0.2, 0.05)[0], 0.18)
         y = pad([A1, A1 * 1.189, A1 * 1.5], d, 600) * 0.5
         for b in np.arange(0, d, 60 / 120 / 2):
-            u = fit(hit(70, 40, 0.18, 0.4, 900, 0.2, 0.05)[0], 0.18) * (0.7 if int(b * 4) % 2 == 0 else 0.35); i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
+            u = HT * (0.7 if int(b * 4) % 2 == 0 else 0.35); i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
         return verb(y, 1.5, 0.2, 3000)
     if mood == 'epic':
         y = pad([A1, A1 * 1.5, A2, A2 * 1.189, A2 * 1.5], d, 1100, 0.008, 2.5, 2) * 0.9
-        for b in np.arange(0, d, 2.0): u = hit(55, 28, 1.6, 0.6, 600, 1.0, 0.3)[0] * 0.7; i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
+        U = hit(55, 28, 1.6, 0.6, 600, 1.0, 0.3)[0] * 0.7
+        for b in np.arange(0, d, 2.0): u = U; i = int(b * SR); y[i:i + len(u)] += u[: max(0, n - i)]
         return verb(y, 3.0, 0.35, 3500)
     if mood == 'sad':
         y = np.zeros(n); chords = [[220, 261.6, 329.6], [174.6, 220, 261.6], [130.8, 196, 261.6], [164.8, 207.7, 246.9]]
         for k, b in enumerate(np.arange(0, d, 3.2)):
-            for j, f in enumerate(chords[k % 4]): u = tone([f, f * 2], 3.0, 0.004, 2.5, [1, 0.2]) * 0.3; i = int((b + j * 0.12) * SR); y[i:i + len(u)] += u[: max(0, n - i)]
+            for j, f in enumerate(chords[k % 4]): u = _tone((f, f * 2), 3.0, 0.004, 2.5, (1, 0.2)) * 0.3; i = int((b + j * 0.12) * SR); y[i:i + len(u)] += u[: max(0, n - i)]
         y += pad([A2, A2 * 1.5], d, 600) * 0.2
         return verb(y, 3.5, 0.5, 5000)
     return np.zeros((2, n))
@@ -309,20 +316,22 @@ segs, cur, t0 = [], 'dark', 0.0
 for b in cues['beats']:
     if b['music'] and b['music'] != cur: segs.append((cur, t0, b['start'])); cur, t0 = b['music'], b['start']
 segs.append((cur, t0, TOTAL))
+import time
 for mood, a, z in segs:
+    _t=time.time()
     d = z - a + 1.0
     if mood == 'cut' or d < 0.3: continue
     m = music(mood, d)
     if m.ndim == 1: m = st(m)
     m = m / (np.max(np.abs(m)) + 1e-9)
     fade = np.minimum(1, np.minimum(np.arange(m.shape[1]) / (0.6 * SR), (m.shape[1] - np.arange(m.shape[1])) / (1.0 * SR)))
-    place(mus, m * fade, a, 0.32)
+    place(mus, m * fade, a, 0.32); print(mood, round(z-a), "s", round(time.time()-_t,1), flush=True)
 # underwater ambience everywhere except surface/title shots
 ambient = fftfilt(rng.standard_normal(N), 25, 260); ambient = ambient / np.max(np.abs(ambient))
 mask = np.zeros(N)
 for b in cues['beats']:
     if b['type'] not in ('surface', 'card', 'title', 'diagram', 'archive', 'endcard'): mask[int(b['start'] * SR): int((b['start'] + b['dur']) * SR)] = 1
-k = int(0.4 * SR); mask = np.convolve(mask, np.ones(k) / k, mode='same')
+k = int(0.4 * SR); cs = np.concatenate([[0], np.cumsum(mask)]); idx = np.arange(N); lo = np.clip(idx - k // 2, 0, N); hi = np.clip(idx + k // 2, 0, N); mask = (cs[hi] - cs[lo]) / k
 amb[0] = ambient * mask * 0.12; amb[1] = np.roll(ambient, 1500) * mask * 0.12
 
 def write(path, x, peak=0.89):
@@ -332,4 +341,4 @@ def write(path, x, peak=0.89):
 write('out/sfx.wav', sfx + amb, 0.85)
 write('out/music.wav', mus, 0.6)
 write('out/mix.wav', sfx + amb + mus, 0.8)
-print('audio done', round(TOTAL, 1), 's; segments', len(segs))
+import sys; print('audio done', round(TOTAL, 1), 's; segments', len(segs))
