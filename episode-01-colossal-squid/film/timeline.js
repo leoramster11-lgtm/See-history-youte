@@ -9,16 +9,8 @@ const b = (shot, vo = '', o = {}) => B.push({ scene, shot, vo, ...o });
 
 // ======================================================= COLD OPEN
 S('COLD OPEN');
-b(['void', { lamp: 0, snow: 0.3 }], '', { min: 3, sfx: [['drone_low', 0, 0.8], ['breath', 0.5]], hud: false, music: 'dark' });
-b(['void', { lamp: 0, snow: 0.6, hudIn: 1 }], 'There is no sun down here.', { sfx: [['blip', 0]], hud: { d: [2000, 2000] } });
-b(['void', { lamp: 0, snow: 0.8 }], 'There never was.', { sfx: [['tick', 0.2], ['tick', 0.8]] });
-b(['void', { lamp: 0, frost: 1, push: 1 }], 'Two hundred atmospheres of pressure. Water colder than the inside of your fridge.', { sfx: [['ice', 0.2]] });
-b(['void', { lamp: 0, fog: 1 }], 'And a darkness so thick it feels solid.', { sfx: [['squeak', 1.2]] });
-b(['void', { lamp: 1, lampOn: 1, beam: [0.1, 0.1] }], 'You switch on the lamp.', { sfx: [['clunk', 0], ['hum_on', 0.05]] });
-b(['void', { lamp: 1, beam: [0.1, -0.45] }], 'Nothing.', { min: 2.4, sfx: [['servo', 0]] });
-b(['void', { lamp: 1, beam: [-0.45, 0.45] }], "You're alone.", { min: 2.6, sfx: [['servo', 0]] });
-b(['void', { lamp: 1, beam: [0.45, 0.42] }], '', { min: 2, sfx: [['heartbeat', 0, 0.8]] });
-b(['void', { lamp: 1, beam: [0.42, 0.4], glint: 1 }], "You're not.", { min: 2.4, sfx: [['subhit', 0.15]] });
+b(['void', { lamp: 1, lampOn: 1, beam: [0.25, -0.1] }], 'Two kilometers down. No sunlight has ever reached this place.', { min: 3.6, sfx: [['clunk', 0], ['hum_on', 0.05], ['drone_low', 0, 0.7]], hud: { d: [2000, 2000] }, music: 'dark' });
+b(['void', { lamp: 1, beam: [-0.1, 0.42], glint: 1 }], "You think you're alone down here. You're not.", { min: 3.2, sfx: [['servo', 0], ['subhit', 0.9]] });
 b(['eye', { zoom: [0.35, 0.8], pupil: [1, 1], dark: 1 }], 'Something has been watching you since the second you arrived.', { sfx: [['rewind', 0], ['drone_swell', 0.5]] });
 b(['eye', { zoom: [0.8, 1.0], pupil: [1, 0.72] }], 'With an eye bigger than a basketball.', { sfx: [['creak', 0.3]] });
 b(['eye', { zoom: [1.0, 1.05], pupil: [0.72, 0.7] }], 'The biggest eye of any animal alive.', { slam: ['LARGEST EYE', 'ON EARTH'], sfx: [['impact', 0]] });
@@ -66,7 +58,7 @@ b(['void', { lamp: 1, beam: [0.1, 0.12], passby: 1 }], 'What was that?', { min: 
 b(['void', { lamp: 1, beam: [0.12, -0.5] }], '', { min: 2.4, hud: { d: [1800, 1900] }, sfx: [['servo', 0]] });
 b(['void', { lamp: 1, beam: [-0.5, 0], thrustersOff: 1 }], 'Two thousand meters.', { hud: { d: [1900, 2000] }, sfx: [['winddown', 0]] });
 b(['diagram', { k: 'palm', items: 'elephants', n: 3, label: '~20 TONS ON YOUR PALM' }], 'Now the pressure on your palm is twenty tons. Three full-grown African elephants, standing on your hand.', { hud: false, sfx: [['elephant_thud', 0.8], ['elephant_thud', 1.6], ['elephant_thud', 2.4]] });
-b(['void', { lamp: 1, beam: [0, 0], wide: 1 }], 'And the only thing between you and that pressure is a few centimeters of steel.', { hud: { d: [2000, 2000] }, sfx: [['drone_swell', 0]] });
+b(['void', { lamp: 1, beam: [0, 0], wide: 1 }], 'Water colder than the inside of your fridge. And the only thing between you and that pressure is a few centimeters of steel.', { hud: { d: [2000, 2000] }, sfx: [['drone_swell', 0]] });
 b(['map', {}], 'Somewhere out here, in the dark, it is waiting.', { hud: false, sfx: [['ping', 1]] });
 b(['void', { lamp: 1, beam: [0, 0], burn: 1 }], 'But first, you need to know what you are dealing with. Because for a hundred years, nobody did.', { hud: { d: [2000, 2000] }, sfx: [['projector', 2.5]] });
 

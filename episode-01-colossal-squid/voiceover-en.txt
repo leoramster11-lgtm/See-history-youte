@@ -1,20 +1,12 @@
 THE COLOSSAL SQUID — Voice-over script (English)
-Runtime ≈ 15:47. Read calm, low and slow (~145 words per minute).
+Runtime ≈ 15:27. Read calm, low and slow (~145 words per minute).
 [pause] = hold 1–2 seconds of silence.
 
 
 === COLD OPEN ===
 
-[pause]
-There is no sun down here.
-There never was.
-Two hundred atmospheres of pressure. Water colder than the inside of your fridge.
-And a darkness so thick it feels solid.
-You switch on the lamp.
-Nothing.
-You're alone.
-[pause]
-You're not.
+Two kilometers down. No sunlight has ever reached this place.
+You think you're alone down here. You're not.
 Something has been watching you since the second you arrived.
 With an eye bigger than a basketball.
 The biggest eye of any animal alive.
@@ -63,7 +55,7 @@ What was that?
 [pause]
 Two thousand meters.
 Now the pressure on your palm is twenty tons. Three full-grown African elephants, standing on your hand.
-And the only thing between you and that pressure is a few centimeters of steel.
+Water colder than the inside of your fridge. And the only thing between you and that pressure is a few centimeters of steel.
 Somewhere out here, in the dark, it is waiting.
 But first, you need to know what you are dealing with. Because for a hundred years, nobody did.
 
@@ -245,4 +237,4 @@ Next time, we go deeper. Down to where light isn't safety. Light is a trap.
 Subscribe. We're only getting started.
 
 
-(1822 words)
+(1808 words)

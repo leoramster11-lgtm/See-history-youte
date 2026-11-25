@@ -1,11 +1,11 @@
 // 2D painters. Signature: (c, p, u, lt, T, beat)  u = 0..1 progress, lt = local seconds, T = global seconds
-import { W, H, clamp, lerp, ease, easeOut, easeIn, easeOutBack, seg, hash, SPR, snow, drawBeam, beamLit, bigText, label, typeText, mk } from './core.js';
+import { W, H, clamp, lerp, ease, easeOut, easeIn, easeOutBack, seg, hash, SPR, HOOK, snow, drawBeam, beamLit, bigText, label, typeText, mk } from './core.js';
 import { TEX, drawEye, drawClub, drawBeak, silhouette, building, whaleSil, squidSil, sub } from './shapes.js';
 
 const sfxTimes = (beat, name) => (beat.sfx || []).filter(s => s[0] === name).map(s => s[1]);
 function deep(c, cx = W / 2, cy = H * 0.55, inner = '#04141c', outer = '#000') {
-  const g = c.createRadialGradient(cx, cy, 0, cx, cy, 1300); g.addColorStop(0, inner); g.addColorStop(1, outer);
-  c.fillStyle = g; c.fillRect(0, 0, W, H);
+  HOOK.water(c, HOOK.T, { depth: 2000 });
+  if (!/^#0[0-9a-f]1[0-9a-f]1/.test(inner)) { const g = c.createRadialGradient(cx, cy, 0, cx, cy, 1300); g.addColorStop(0, inner); g.addColorStop(1, 'rgba(0,0,0,0)'); c.save(); c.globalCompositeOperation = 'screen'; c.globalAlpha = 0.8; c.fillStyle = g; c.fillRect(0, 0, W, H); c.restore(); }
 }
 function shakeT(c, amt, T) { c.translate(Math.sin(T * 61) * amt, Math.cos(T * 53) * amt); }
 
@@ -64,11 +64,12 @@ export function pVoid(c, p, u, lt, T, beat) {
     c.globalCompositeOperation = 'multiply'; c.fillStyle = `rgba(10,6,14,${0.6 * (1 - u)})`; c.fillRect(0, 0, W, H); c.restore();
   }
   const jit = p.jitter ? sfxTimes(beat, 'click_whale').reduce((m, t) => Math.max(m, Math.exp(-Math.abs(lt - t) * 8)), 0) * 3 * p.jitter : 0;
-  snow(c, T, { beam: bm, vy: p.descend ? -0.04 : 0.006, vx: 0.003, amt: 1, jitter: jit, size: p.macro ? 2.4 : 1 });
+  HOOK.critters(c, T, 1);
+  snow(c, T, { beam: bm, vy: p.descend ? -0.04 : 0.004, vx: 0.008, amt: 1, jitter: jit, size: p.macro ? 2.4 : 1 });
   // falling beak
   if (p.beakfall) {
     const y = lerp(-200, H + 150, (lt + (p.beakfall - 1) * 4.5) / 9);
-    c.save(); c.translate(W / 2 + 80 + Math.sin(lt) * 30, y); c.rotate(lt * 0.4); drawBeak(c, 0, 0, 0.35, 0.1); c.restore();
+    c.save(); c.translate(W / 2 + 80 + Math.sin(lt) * 30, y); c.rotate(lt * 0.4); drawBeak(c, 0, 0, 0.35, 0.1, { bare: 1 }); c.restore();
   }
   // glint of the eye at beam edge
   if (p.glint) {
@@ -128,8 +129,8 @@ export function pEye(c, p, u, lt, T) {
   const g = c.createRadialGradient(W * 0.45, H * 0.75, 200, W * 0.6, H / 2, 1400);
   g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, `rgba(0,0,0,${p.reveal ? 0.9 - 0.3 * u : 0.75})`);
   c.fillStyle = g; c.fillRect(0, 0, W, H);
-  c.save(); c.globalCompositeOperation = 'lighter'; drawBeam(c, { x: 40, y: H + 60, ang: -0.62, len: 1700, spread: 0.32 }, 0.5); c.restore();
-  snow(c, T, { vy: 0.004, amt: 0.6, base: 0.5 });
+  c.save(); c.globalCompositeOperation = 'lighter'; drawBeam(c, { x: 40, y: H + 60, ang: -0.62, len: 1700, spread: 0.32 }, 0.22); c.restore();
+  HOOK.murk(c, T, 0.35); snow(c, T, { vy: 0.003, amt: 0.7, base: 0.6 });
 }
 
 // ---------------------------------------------------------------- SKIN pan
@@ -215,6 +216,7 @@ export function pDescent(c, p, u, lt, T) {
   const col = waterCol(d), col2 = waterCol(d + 150);
   const g = c.createLinearGradient(0, 0, 0, H); g.addColorStop(0, `rgb(${col})`); g.addColorStop(1, `rgb(${col2})`);
   c.fillStyle = g; c.fillRect(0, 0, W, H);
+  HOOK.murk(c, T, 0.5 + 0.5 * clamp(d / 600)); if (d > 150) HOOK.critters(c, T, clamp(d / 500));
   const sun = clamp(1 - d / 300);
   if (sun > 0) { c.save(); c.globalCompositeOperation = 'lighter'; for (let i = 0; i < 7; i++) { const x = W * (0.1 + i * 0.14) + Math.sin(T * 0.3 + i) * 40;
     c.globalAlpha = sun * 0.18; c.beginPath(); c.moveTo(x, -20); c.lineTo(x + 60, -20); c.lineTo(x + 260, H); c.lineTo(x + 120, H); c.fillStyle = '#bfefff'; c.fill(); } c.restore(); }
@@ -255,8 +257,8 @@ export function pDescent(c, p, u, lt, T) {
 
 // ---------------------------------------------------------------- BLACK / TITLE / CARD
 export function pBlack(c, p, u, lt, T) {
-  c.fillStyle = '#000'; c.fillRect(0, 0, W, H);
-  snow(c, T, { amt: 0.45, vy: -0.006, base: 0.35, size: 1.2 });
+  HOOK.water(c, T, { depth: 2000, glow: 0.4, murk: 0.6 }); c.fillStyle = 'rgba(0,0,0,.55)'; c.fillRect(0, 0, W, H);
+  HOOK.critters(c, T, 0.6); snow(c, T, { amt: 0.6, vy: 0.003, base: 0.5 });
   if (p.label) typeText(c, p.label, lt, W / 2, H / 2 + 120, { font: '600 34px "JetBrains Mono"', ls: '10px', color: 'rgba(150,220,235,.85)' });
 }
 export function pTitle(c, p, u, lt, T) {

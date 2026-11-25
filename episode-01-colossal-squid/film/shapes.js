@@ -139,7 +139,7 @@ export function drawBeak(c, cx, cy, sc, open, o = {}) {
     c.fillStyle = fg; c.beginPath(); c.arc(0, 0, 360, 0, 7); c.fill();
   }
   c.translate(-150, -20);
-  const shade = (x0, x1) => { const g = c.createLinearGradient(x0, 0, x1, 0); g.addColorStop(0, 'rgba(150,105,60,.9)'); g.addColorStop(0.35, '#3a2414'); g.addColorStop(1, '#040202'); return g; };
+  const shade = (x0, x1) => { const g = c.createLinearGradient(x0, 0, x1, 0); g.addColorStop(0, 'rgba(90,60,35,.55)'); g.addColorStop(0.3, '#20140b'); g.addColorStop(1, '#020101'); return g; };
   // lower mandible (smaller, tucked under)
   c.save(); c.translate(10, 30); c.rotate(open * 0.38);
   c.beginPath(); c.moveTo(0, 0); c.quadraticCurveTo(120, 8, 205, 22); c.quadraticCurveTo(238, 26, 246, 4);
@@ -148,10 +148,10 @@ export function drawBeak(c, cx, cy, sc, open, o = {}) {
   c.restore();
   // upper mandible: big, with a hooked tip curling down
   c.save(); c.rotate(-open * 0.3);
-  c.beginPath(); c.moveTo(0, 20); c.bezierCurveTo(0, -150, 240, -190, 310, -40);
+  c.beginPath(); c.moveTo(0, 20); c.bezierCurveTo(10, -70, 200, -120, 300, -40);
   c.quadraticCurveTo(338, 40, 280, 130); c.quadraticCurveTo(262, 60, 220, 34); c.quadraticCurveTo(120, 22, 0, 20); c.closePath();
   c.fillStyle = shade(0, 330); c.fill();
-  c.strokeStyle = 'rgba(255,235,210,.3)'; c.lineWidth = 6; c.beginPath(); c.moveTo(40, -95); c.bezierCurveTo(130, -160, 260, -140, 305, -40); c.stroke();
+  c.strokeStyle = 'rgba(255,235,210,.3)'; c.lineWidth = 6; c.beginPath(); c.moveTo(60, -45); c.bezierCurveTo(140, -95, 250, -90, 298, -40); c.stroke();
   c.restore();
   c.restore();
 }

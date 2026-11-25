@@ -24,6 +24,7 @@ export function glowSprite(size, col) {
   x.fillStyle = g; x.fillRect(0, 0, size, size); return c;
 }
 export const SPR = {};
+export const HOOK = { T: 0 };
 export function initSprites() {
   SPR.dot = glowSprite(32, '225,240,248');
   SPR.dotBig = glowSprite(128, '225,240,248');
@@ -35,7 +36,7 @@ export function initSprites() {
   const [b, bx] = mk(1400, 700);
   bx.filter = 'blur(28px)';
   const g = bx.createLinearGradient(0, 0, 1400, 0);
-  g.addColorStop(0, 'rgba(200,232,248,.55)'); g.addColorStop(0.4, 'rgba(170,215,240,.22)'); g.addColorStop(1, 'rgba(150,200,230,0)');
+  g.addColorStop(0, 'rgba(205,240,235,.6)'); g.addColorStop(0.4, 'rgba(150,225,215,.24)'); g.addColorStop(1, 'rgba(120,200,200,0)');
   bx.fillStyle = g; bx.beginPath(); bx.moveTo(40, 335); bx.lineTo(1360, 60); bx.lineTo(1360, 640); bx.lineTo(40, 365); bx.closePath(); bx.fill();
   SPR.beam = b;
   // grain tiles
@@ -60,6 +61,7 @@ export function initSnow() {
 }
 // vy: screen heights per second (negative = up). beam: {x,y,ang,len,spread} lit region
 export function snow(c, T, o = {}) {
+  if (HOOK.flakes) return HOOK.flakes(c, T, o);
   const vy = o.vy ?? -0.012, vx = o.vx ?? 0.004, amt = o.amt ?? 1, jit = o.jitter || 0;
   const n = Math.floor(SNOW.length * amt);
   for (let i = 0; i < n; i++) {
@@ -90,6 +92,7 @@ export function drawBeam(c, bm, I = 1) {
   c.translate(bm.x, bm.y); c.rotate(bm.ang);
   const sc = bm.len / 1360, sy = Math.tan(bm.spread) * bm.len / 290;
   c.scale(sc, sy); c.drawImage(SPR.beam, -40, -350); c.restore();
+  if (HOOK.beamHaze) HOOK.beamHaze(c, bm, HOOK.T, I);
 }
 
 // ---------------- HUD

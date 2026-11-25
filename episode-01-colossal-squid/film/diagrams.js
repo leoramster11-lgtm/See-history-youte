@@ -1,11 +1,10 @@
 // Infographic shots (kind = p.k). Clean "documentary motion graphics" look.
-import { W, H, clamp, lerp, ease, easeOut, easeOutBack, seg, hash, SPR, snow, bigText, label } from './core.js';
+import { W, H, clamp, lerp, ease, easeOut, easeOutBack, seg, hash, SPR, HOOK, snow, bigText, label } from './core.js';
 import { TEX, drawEye, drawClub, drawBeak, silhouette, building, whaleSil, squidSil, sub } from './shapes.js';
 
 const CY = '#5fd0ff', RED = '#ff4a3d', SIL = 'rgba(160,215,232,.92)';
 function bg(c, T) {
-  const g = c.createRadialGradient(W / 2, H / 2, 0, W / 2, H / 2, 1300); g.addColorStop(0, '#0a2230'); g.addColorStop(1, '#010509');
-  c.fillStyle = g; c.fillRect(0, 0, W, H);
+  HOOK.water(c, T, { depth: 1200, murk: 0.8 });
   c.strokeStyle = 'rgba(95,208,255,.06)'; c.lineWidth = 1;
   const o = (T * 8) % 80;
   for (let x = -o; x < W; x += 80) { c.beginPath(); c.moveTo(x, 0); c.lineTo(x, H); c.stroke(); }
@@ -66,7 +65,7 @@ export function pDiagram(c, p, u, lt, T, beat) {
     whaleSil(c, W * 0.12, H * 0.52, 1500, '#16212a', { edge: 'rgba(95,208,255,.3)' });
     c.save(); c.beginPath(); c.ellipse(W * 0.45, H * 0.55, 260, 120, 0, 0, 7); c.strokeStyle = CY; c.setLineDash([10, 8]); c.lineWidth = 3; c.stroke(); c.restore();
     const n = Math.floor(ease(seg(lt, 0.3, 2.5)) * 70);
-    for (let i = 0; i < n; i++) { c.save(); c.translate(W * 0.45 + (hash(i) - 0.5) * 420, H * 0.55 + (hash(i + 1) - 0.5) * 170); c.rotate(hash(i + 2) * 6); drawBeak(c, 0, 0, 0.09, 0.2); c.restore(); }
+    for (let i = 0; i < n; i++) { c.save(); c.translate(W * 0.45 + (hash(i) - 0.5) * 420, H * 0.55 + (hash(i + 1) - 0.5) * 170); c.rotate(hash(i + 2) * 6); drawBeak(c, 0, 0, 0.09, 0.2, { bare: 1 }); c.restore(); }
     tag(c, 'HUNDREDS OF BEAKS', W / 2, 190, ease(seg(lt, 0.8, 1.3)), RED, 60);
   } else if (k === 'clock') {
     const cx = W / 2, cy = H / 2, r = 260, a = ease(u) * p.hours * Math.PI * 2;

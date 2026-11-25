@@ -1,5 +1,6 @@
 // Frame dispatcher: timeline -> painters -> overlays -> grade.
-import { W, H, clamp, lerp, ease, seg, initSprites, initSnow, hud, bigText, label, finish, mk, SPR } from './core.js';
+import { W, H, clamp, lerp, ease, seg, initSprites, initSnow, hud, bigText, label, finish, mk, SPR, HOOK } from './core.js';
+import { initWater, initFlakes, water, murk, flakes, beamHaze, critters, wobble } from './water.js';
 import { initTextures, drawBeak as S2B } from './shapes.js';
 import * as S2 from './shots2d.js';
 import { pDiagram } from './diagrams.js';
@@ -36,6 +37,7 @@ function callout(xy, txy, big, small, right = false, a = 1) {
 function draw3d(type, p, u, lt, T) {
   const { canvas, proj } = render3d(type, p, u, lt, T);
   c.drawImage(canvas, 0, 0, W, H);
+  murk(c, T, 0.45); flakes(c, T, { amt: 0.55, vy: 0.003, vx: 0.01, base: 0.7 });
   // shot-specific overlays
   if (type === 'squid3d' && p.cam === 'scale') {
     const a = ease(seg(lt, 0.2, 0.7));
@@ -90,6 +92,7 @@ function draw3d(type, p, u, lt, T) {
 window.renderFrame = function (T) {
   const i = findBeat(T), b = BEATS[i], lt = T - b.start, u = clamp(lt / b.dur);
   const [type, p] = b.shot;
+  HOOK.T = T;
   c.save();
   // global impact shake
   let shake = 0;
@@ -101,6 +104,7 @@ window.renderFrame = function (T) {
   else if (type === 'squid3d' || type === 'whale3d' || type === 'attack') draw3d(type, p, u, lt, T);
   else P2[type](c, p, u, lt, T, b);
   c.restore();
+  if (['void', 'eye', 'skin', 'descent', 'black', 'squid3d', 'whale3d', 'attack', 'flash', 'title', 'card', 'teaser', 'endcard'].includes(type) && !(type === 'descent' && p.d[0] < 1 && p.d[1] < 1)) wobble(c, T, type === 'card' || type === 'title' ? 0.8 : 1.6);
   // slam text
   if (b.slam) {
     const t0 = (b.sfx || []).find(s => /impact/.test(s[0]))?.[1] ?? 0.15;
@@ -129,6 +133,7 @@ window.BEATS = BEATS.map(b => ({ start: b.start, dur: b.dur, type: b.shot[0], sc
 
 (async () => {
   await document.fonts.load('900 100px "Inter Display"'); await document.fonts.load('700 40px "JetBrains Mono"'); await document.fonts.load('500 40px "Inter"');
-  initSprites(); initSnow(); initTextures(); init3d();
+  initSprites(); initSnow(); initTextures(); init3d(); initWater(); initFlakes();
+  Object.assign(HOOK, { water, murk, flakes, beamHaze, critters });
   ready = true; window.__ready = true;
 })();

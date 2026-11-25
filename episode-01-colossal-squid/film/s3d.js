@@ -87,7 +87,7 @@ function makeBeak() {
 }
 function getSquidScene() {
   if (SC.squid) return SC.squid;
-  const s = envBase(0x020a10, 0.03);
+  const s = envBase(0x052530, 0.045);
   s.add(new THREE.HemisphereLight(0x4f8fa8, 0x050102, 0.45));
   const key = new THREE.SpotLight(0xe9f4ff, 140, 40, 0.5, 0.8, 1.5); key.position.set(-3, 4, 7); s.add(key, key.target);
   const rim = new THREE.DirectionalLight(0x58d0ff, 2.6); rim.position.set(3, 4, -7); s.add(rim);
@@ -129,7 +129,7 @@ function getSquidScene() {
 
 function getWhaleScene() {
   if (SC.whale) return SC.whale;
-  const s = envBase(0x01070b, 0.022);
+  const s = envBase(0x041d27, 0.03);
   s.add(new THREE.HemisphereLight(0x2e6f88, 0x000000, 0.45));
   const top = new THREE.DirectionalLight(0x6fd2ff, 1.4); top.position.set(2, 12, -4); s.add(top);
   const sub = V3(-3.6, -3.4, 7.5);
@@ -176,7 +176,7 @@ function battleSquid(W, T, wild) {
 
 function getAttackScene() {
   if (SC.attack) return SC.attack;
-  const s = envBase(0x010509, 0.08);
+  const s = envBase(0x041c25, 0.09);
   s.add(new THREE.HemisphereLight(0x2e6f88, 0x000000, 0.25));
   const lamp = new THREE.SpotLight(0xeaf6ff, 60, 30, 0.7, 0.8, 1.3); lamp.position.set(0, -0.3, 0.2); lamp.target.position.set(0, 0, -5); s.add(lamp, lamp.target);
   const rim = new THREE.DirectionalLight(0x5fd0ff, 1.2); rim.position.set(2, 4, -6); s.add(rim);
