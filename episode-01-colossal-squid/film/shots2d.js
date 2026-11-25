@@ -254,8 +254,9 @@ export function pDescent(c, p, u, lt, T) {
 }
 
 // ---------------------------------------------------------------- BLACK / TITLE / CARD
-export function pBlack(c, p, u, lt) {
+export function pBlack(c, p, u, lt, T) {
   c.fillStyle = '#000'; c.fillRect(0, 0, W, H);
+  snow(c, T, { amt: 0.45, vy: -0.006, base: 0.35, size: 1.2 });
   if (p.label) typeText(c, p.label, lt, W / 2, H / 2 + 120, { font: '600 34px "JetBrains Mono"', ls: '10px', color: 'rgba(150,220,235,.85)' });
 }
 export function pTitle(c, p, u, lt, T) {
