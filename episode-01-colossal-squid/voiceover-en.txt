@@ -1,240 +1,120 @@
 THE COLOSSAL SQUID — Voice-over script (English)
-Runtime ≈ 15:27. Read calm, low and slow (~145 words per minute).
-[pause] = hold 1–2 seconds of silence.
-
+Runtime ≈ 8:48. Read with tension, ~150 words per minute. One line = one beat on screen.
 
 === COLD OPEN ===
 
-Two kilometers down. No sunlight has ever reached this place.
-You think you're alone down here. You're not.
-Something has been watching you since the second you arrived.
-With an eye bigger than a basketball.
-The biggest eye of any animal alive.
-[pause]
-Today, we go down to meet the colossal squid. And we'll find out exactly what would happen to you if you met one.
-Hooks that rotate.
-A beak that cuts like shears.
-Three hearts. Blue blood.
-And the one creature on Earth it is truly afraid of.
-Nobody has ever filmed an adult one alive in the deep.
-So let's go see one.
+[0:00] Two kilometers down. Your lights just switched on — and for a thousand meters in every direction, they're the only light there is.
+[0:09] Then something crosses the edge of your beam.
+[0:13] Your sonar locks on. Whatever it is, it's longer than your sub.
+[0:18] And then it opens the biggest eye of any animal on Earth.
+[0:23] This is the colossal squid. Nobody has ever seen a fully grown one alive, in its home.
+[0:30] Tonight, you're going to try.
 
+=== THE MISSION ===
+
+[0:32] Your trip starts at the bottom of the world. The Southern Ocean, near Antarctica — the stormiest sea on the planet.
+[0:41] Waves here can stand fifteen meters tall. As high as a five-story building — slamming into your ship, again and again.
+[0:50] And almost everything we know about the animal you're hunting… comes from dead bodies.
+[0:56] In 1925, scientists found its first pieces — two arms — inside the stomach of a sperm whale.
+[1:03] In 2007, fishermen hauled one up from the deep. It weighed four hundred ninety-five kilograms.
+[1:10] Adults seen alive, in the deep, by a human being? Zero.
+[1:14] So you climb into a sub not much bigger than a car…
+[1:19] …and they drop you into the ocean.
 
 === THE DESCENT ===
 
-The Southern Ocean. The sea that circles Antarctica.
-The coldest, angriest water on the planet.
-Waves here can reach twenty meters. That is a six-story building made of water.
-This is your ride.
-A steel sphere about two meters wide. Roughly the size of the inside of a small car.
-One window. One cable to the surface.
-And no way out until they pull you back up.
-Descent begins.
-[pause]
-At thirty meters, the color red is the first thing to die.
-Cut your finger here, and your blood looks green.
-The water has simply eaten the red part of the light.
-At two hundred meters, you enter the twilight zone.
-Here, animals start making their own light.
-Up to three out of four creatures in the deep can glow.
-To lure prey. To scare predators. To find each other in the dark.
-Five hundred meters. Two degrees. Water beads on the walls.
-Now you can see your own breath.
-[pause]
-One thousand meters. The last bit of sunlight is gone.
-From here all the way to the seafloor, it is night. Forever.
-The pressure on the palm of your hand right now? About ten tons. Seven cars, stacked on your hand.
-Without the sphere, the air in your lungs would be crushed down to the size of a golf ball.
-You wouldn't last a second.
-[pause]
-The hull groans.
-That's normal, you tell yourself. That's just the steel settling under the pressure.
-[pause]
-It's fine.
-What was that?
-[pause]
-Two thousand meters.
-Now the pressure on your palm is twenty tons. Three full-grown African elephants, standing on your hand.
-Water colder than the inside of your fridge. And the only thing between you and that pressure is a few centimeters of steel.
-Somewhere out here, in the dark, it is waiting.
-But first, you need to know what you are dealing with. Because for a hundred years, nobody did.
-
-
-=== A MONSTER WITH NO FACE ===
-
-1925.
-Whalers cut open the stomach of a sperm whale.
-Inside, they find two pieces of arm.
-But they are not covered in suckers. They are covered in hooks.
-Sharp. Curved. And they swivel.
-A scientist named Guy Robson describes a brand new species from those two scraps alone.
-The colossal squid. But nobody has seen the animal itself.
-For decades, all we find are traces.
-Beaks in the stomachs of sperm whales. Hundreds of them.
-Strange scars on whale skin. Scraps in fishing nets.
-Then, February 2007.
-A fishing boat is hauling up toothfish from about one and a half kilometers down.
-The line goes tight.
-On the hook, a fish. And wrapped around the fish, something that refuses to let go.
-It takes nearly two hours to bring it to the surface.
-When it hits the deck, the crew understands. Nobody has ever seen anything like this.
-Four hundred and ninety-five kilograms.
-As heavy as a grand piano. As heavy as a big male polar bear. As heavy as seven grown men.
-The heaviest invertebrate humans have ever held.
-They freeze it whole and ship it to a museum in New Zealand, where it is still on display today.
-And the first video of a live colossal squid in the wild? That only came in 2025.
-A hundred years after we learned it existed. A baby, thirty centimeters long, clear as glass.
-An adult, in its own world, at its own depth? Nobody has ever filmed one.
-Until now.
-
+[1:23] In the first ten meters, red light disappears. If you cut your hand down here, your blood would look green.
+[1:31] At two hundred meters, the sunlight is gone. From here down, it's night. Forever.
+[1:37] At three hundred thirty-two meters, you pass the deepest any human has ever gone with scuba gear. You keep going.
+[1:45] At six hundred meters, a fish carrying its own flashlight drifts past your window.
+[1:51] At a thousand meters, pressure starts doing strange things.
+[1:55] Scientists bring foam coffee cups down here. They come back up the size of a thimble.
+[2:02] Because at two kilometers, every square inch of your sub is holding up the weight of a car.
+[2:09] If a single seal fails, the water comes in faster than a Formula One car — sharp enough to cut through steel.
+[2:18] Outside, the water is just above freezing. Colder than the inside of your fridge.
+[2:24] Two thousand meters. You're more than halfway to the Titanic.
+[2:29] If you opened the hatch now, the water would crush your lungs to the size of a ping-pong ball. In less than a second.
+[2:39] Two thousand meters. You cut the engines. You switch off the lights. And you wait.
 
 === FIRST CONTACT ===
 
-You cut the engines.
-Silence. Just marine snow, drifting through the light.
-Dead plankton. Crumbs of life from the surface. Some of it has been sinking for weeks.
-Then, at the very edge of the light, a color.
-Dark red. Almost black.
-Down here, red light doesn't exist. So red skin looks black. Perfect camouflage.
-Only your lamp gives it away.
-And then you see it.
-The eye.
-You can see yourself in it.
-Twenty-seven centimeters across, measured on a dead one. Probably even bigger alive. Wider than a dinner plate. Bigger than a basketball.
-The lens inside is the size of an orange.
-And beside the eyes, small glowing organs. Photophores.
-Scientists think it may use them like headlights.
-But why would anything need an eye this big, in a place with no light?
-Here is what scientists think. When something huge moves through the dark,
-it disturbs glowing plankton. And the water lights up all around it.
-An eye this size can spot that glow from more than a hundred and twenty meters away. That is longer than a football field.
-It's not an eye for hunting.
-It's an early-warning system.
-It isn't looking for food. It's looking for the thing it fears.
-But you are big. You glow. You hum.
-And right now, it's deciding what you are.
-Your pulse: one hundred forty-two.
-Your palms are soaked, even though it's five degrees in here.
-You hold your breath. You can't help feeling you're breathing too loud.
-It can't hear you.
-Can it?
-Then it moves. And it just keeps going. And going.
-Where did it go?
-Let's freeze this moment, and take a proper look at it.
-
+[2:45] It's here.
+[2:48] Long. Slow. The color of blood. Almost twice the length of your sub.
+[2:53] It isn't chasing anything. It doesn't need to.
+[2:57] Scientists think it hunts by ambush. It hangs in the dark, barely moving… and waits for food to come to it.
+[3:06] And when a fish swims close enough—
+[3:09] So what do you do? Switch off your lights? Stay perfectly still? Or get closer?
+[3:15] You're a scientist. You get closer.
 
 === ANATOMY OF A MONSTER ===
 
-Here it is, next to you.
-Weight: up to around half a ton.
-Picture a horse. Now give it eight arms, two tentacles, and a beak.
-And the biggest ones out there could be heavier still. Nobody knows.
-Length: up to about ten meters, by most estimates.
-Almost as long as a city bus. Stand it on its tail, and it would look into the windows of a three-story building.
-Its main body, the mantle, is about two and a half meters. Taller than any doorway in your house.
-Its cousin, the giant squid, is longer and thinner. But the colossal is heavier. A lot heavier.
-Eight arms. Two long hunting tentacles.
-And at the end of each tentacle, a club, armed with hooks.
-Each hook swivels on its base.
-When prey pulls away, the hook doesn't rip out. It turns, and digs in deeper.
-No other squid on Earth has weapons like this.
-Now, look between the arms.
-The beak.
-The largest beak of any squid.
-Hard as horn, with edges that work like a pair of metal shears.
-That's why beaks are what we usually find. Whales can digest everything else. Not the beak.
-Inside, it gets even stranger.
-One heart.
-Two hearts.
-Three.
-Two push blood through the gills. The third drives it through the body.
-And the blood is blue. Built on copper instead of iron.
-Its brain is shaped like a donut, wrapped around its throat.
-Swallow something too big, and the food would press against its own brain.
-So it slices every meal into small pieces first.
-And here is the strangest number of all.
-Scientists estimate a half-ton colossal squid needs only about thirty grams of food a day. Roughly one slice of bread.
-It doesn't chase. It waits. Still, for hours. Saving every drop of energy.
-It isn't a hunter.
-It's an ambush.
-And you are hanging right in front of it.
-
+[3:18] Up close, the first thing that hits you is the weight. Four hundred ninety-five kilograms.
+[3:24] That's a grand piano. A grand piano… that swims, and hunts.
+[3:29] It's the heaviest invertebrate ever found. Heavier than any octopus. Heavier than the giant squid.
+[3:36] Its cousin, the giant squid, is longer — but skinny. The colossal squid is built like a tank.
+[3:43] To move, it sucks water into its body — and blasts it out through a tube. A living jet engine.
+[3:51] Now look at its eye.
+[3:54] It's at least twenty-seven centimeters across. Bigger than a basketball. Alive, it may be even bigger.
+[4:00] And right next to each eye, it carries its own headlights — glowing organs that light up whatever is in front of it.
+[4:10] Why such giant eyes? Not to find food. To spot the one animal that hunts it — from more than a hundred meters away.
+[4:20] Next, the arms. Giant squid have suckers. The colossal squid has hooks.
+[4:25] Up to twenty-five on each tentacle club. And some of them can swivel — like a hook on a ball joint.
+[4:34] Once they sink in, pulling away only drives them deeper.
+[4:38] In the middle of all those arms is the mouth: a beak, like a parrot's — the size of your fist.
+[4:47] It doesn't swallow prey whole. It slices it into small pieces first.
+[4:52] And there is a strange reason it has to.
+[4:56] Its brain is shaped like a doughnut — and its throat runs straight through the hole.
+[5:03] Every bite passes through the middle of its brain. Swallow something too big… and it could injure its own brain.
+[5:11] It also has three hearts. And its blood is blue.
+[5:15] And for all that size, it barely eats. Scientists estimate around thirty grams of food a day.
+[5:22] That's about two chicken nuggets. For half a tonne of squid.
+[5:27] It lives slowly. It moves slowly. Until it doesn't.
 
 === THE ATTACK ===
 
-Nothing happens.
-One second. Ten.
-A full minute.
-You decide to angle the lamp away. Maybe the light is bothering it.
-[pause]
-Strike!
-The tentacles fire in a fraction of a second. Hooks rake across the steel.
-Eight arms close around the sphere.
-Suckers. Hooks. Red flesh pressed flat against the glass.
-It's pulling you in. Toward the beak.
-Half a ton of muscle against two tons of steel.
-So, what would actually happen to you?
-Two scenarios.
-Inside the sphere, you survive. Steel is the one thing it cannot cut.
-But you're hanging from a single cable, and it's starting to strain.
-Now imagine you are outside.
-Honestly? The pressure would kill you long before it ever touched you.
-But say some impossible suit keeps you alive.
-The hooks sink in. And turn.
-The arms drag you in, toward the beak.
-And the beak doesn't bite. It slices. Piece by piece. Small enough to fit through that donut-shaped brain.
-Slowly. In total darkness. Two kilometers from the nearest human being.
-[pause]
-And then, it freezes.
-It's not looking at you anymore.
-It's seen something.
-
+[5:31] Your lights are bothering it.
+[5:33] A tentacle slams into your dome.
+[5:36] Then another. Hooks drag across the glass.
+[5:39] It's wrapping around your sub. The arms find the frame… the cable… the lights.
+[5:45] An alarm goes off. Cable load rising.
+[5:49] You have seconds. Dump ballast and shoot to the surface? Fight back with the robot arm? Or hit it with every light you've got?
+[5:58] You hit the strobes.
+[6:01] To an animal that has spent its whole life in the dark, that's like a bomb going off.
+[6:08] It lets go — and vanishes into a cloud of its own ink.
+[6:14] But it wasn't running from you.
 
 === THE ONE IT FEARS ===
 
-[pause]
-Click. You don't hear it with your ears.
-You feel it in your chest.
-Click. Click. Click-click-click-click.
-A sperm whale. Hunting.
-It sees with sound. Echolocation.
-Its clicks are among the loudest sounds made by any animal on Earth. Around two hundred and thirty decibels underwater.
-Remember the glowing plankton? There it is.
-This is what that eye was built for. This is what it has been watching for its whole life.
-It lets go of you.
-It runs.
-Too late.
-A bull sperm whale.
-Fifty tons. As heavy as eight African elephants.
-Eighteen meters long. Stand it up, and it reaches the top of a six-story building.
-It dove here from the surface on a single breath. It can stay down for more than an hour.
-And inside that giant head is the largest brain of any animal that has ever lived. About five times heavier than yours.
-Now look at its skin.
-Rings left by suckers.
-Long gouges from hooks.
-Every single one of them, a fight with something like the animal next to you.
-The squid strikes first. Hooks, straight into the whale's face.
-It sprays a cloud of ink.
-Useless. The whale sees with sound, not light.
-Fifty thousand kilos, against five hundred.
-The hooks leave fresh scars. But the whale doesn't stop.
-It only has teeth in its lower jaw. It doesn't chew.
-It swallows.
-[pause]
-
+[6:17] Something else is coming. And your sonar can hear it.
+[6:21] Click. Click. Click.
+[6:25] A sperm whale. The loudest animal on Earth.
+[6:28] Its clicks hit two hundred thirty decibels. Up close, that sound can make your whole body vibrate.
+[6:35] It's eighteen meters long, and weighs as much as four school buses.
+[6:41] A third of its body is its head. And inside sits the biggest brain of any animal that has ever lived. Eight kilograms. Yours? About one and a half.
+[6:52] And when they sleep, they hang straight up and down in the water — like giant tree trunks floating in the dark.
+[7:01] And it dove here — two kilometers down — on a single breath.
+[7:07] Try it. Hold your breath. Right now.
+[7:10] Most people give up in under a minute.
+[7:14] A sperm whale can stay down for more than an hour.
+[7:19] It came down here for one thing. The same thing you came for.
+[7:24] As it closes in, the clicks speed up into a buzz. It can see the squid in total darkness — with sound.
+[7:33] This is the fight no human has ever witnessed.
+[7:37] We only know it happens because of what's left behind.
+[7:42] Sperm whales come up covered in scars: rings from suckers, long gashes from hooks.
+[7:48] And inside their stomachs, scientists find beaks. Thousands of them.
+[7:52] Squid flesh digests. Beaks don't.
+[7:54] Down here, the colossal squid is a monster. To a sperm whale… it's dinner.
 
 === THE ASCENT ===
 
-When the ink clears, there is nothing left.
-Years from now, someone might find one more beak in the stomach of a whale.
-And that's all that will be left of the monster you saw.
-They pull you up. Two hours to the surface. You don't say a word.
-Somewhere below you, there could be thousands of them.
-We don't know how many there are. How long they live. How big they can really get.
-We have better maps of the surface of Mars than of our own ocean floor.
-The colossal squid isn't hiding from us. It just lives where we never go.
-Next time, we go deeper. Down to where light isn't safety. Light is a trap.
-Subscribe. We're only getting started.
+[8:00] Your batteries are running low. Time to go up.
+[8:04] And on the way, you realize something. In all of human history, this animal has almost never been seen alive.
+[8:13] The first video of a living colossal squid in the deep was filmed in 2025. It was a baby — about as long as a ruler.
+[8:23] The giants are still down there. In the dark. Watching — with eyes bigger than basketballs.
+[8:30] And they've probably already seen you.
 
+=== NEXT TIME ===
 
-(1808 words)
+[8:34] Next time: a fish that hunts with a glowing lure… and whose males fuse into the female's body. Forever.
+
+(1216 words)
